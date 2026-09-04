@@ -1,0 +1,72 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Uploaded files
+backend/upload/
+uploads/
+uploaded_pdfs/
+
+# Generated images
+extracted_images/
+ai-service/test-images/
+ai-service/*.png
+ai-service/*.jpg
+ai-service/*.jpeg
+
+# Backup files
+ai-service/*backup*.py
+backend/*backup*.js
+
+# Test scripts
+ai-service/test-*.py
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log# Node
+node_modules/
+npm-debug.log*
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Uploaded / generated files
+uploads/
+uploaded_pdfs/
+extracted_images/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
