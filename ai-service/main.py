@@ -1,12 +1,22 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
-from pypdf import PdfReader
+from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image
 import pymupdf
 import os
 import io
+import sys
 import re
 import hashlib
 from typing import Any, Dict, List, Optional
+
+# Ensure UTF-8 output on Windows consoles
+try:
+    if sys.stdout and hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    if sys.stderr and hasattr(sys.stderr, 'reconfigure'):
+        sys.stderr.reconfigure(encoding='utf-8')
+except Exception:
+    pass
 
 
 # ============================================================
@@ -15,12 +25,20 @@ from typing import Any, Dict, List, Optional
 
 app = FastAPI(
     title="Ceramic AI Service",
-    version="4.0.0"
+    version="5.0.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
 # ============================================================
-# ROOT
+# ROOT & HEALTH
 # ============================================================
 
 @app.get("/")
@@ -28,13 +46,9 @@ def root():
     return {
         "success": True,
         "message": "Ceramic AI Python service is running",
-        "version": "4.0.0"
+        "version": "5.0.0"
     }
 
-
-# ============================================================
-# HEALTH
-# ============================================================
 
 @app.get("/health")
 def health():
@@ -42,2109 +56,479 @@ def health():
         "success": True,
         "service": "ai-service",
         "status": "healthy",
-        "version": "4.0.0"
+        "version": "5.0.0"
     }
 
 
 # ============================================================
-# NORMALIZATION
+# TEXT & FORMATTING UTILITIES
 # ============================================================
 
 def normalize_text(text: Any) -> str:
     if text is None:
         return ""
-
     text = str(text)
-
-    text = text.replace("\r\n", "\n")
-    text = text.replace("\r", "\n")
-    text = text.replace("\u00a0", " ")
-
-    text = text.replace("ﬁ", "fi")
-    text = text.replace("ﬂ", "fl")
-
-    text = re.sub(r"[\u200b-\u200d\uFEFF]", "", text)
-
+    text = text.replace("\r\n", "\n").replace("\r", "\n").replace("\u00a0", " ")
+    text = text.replace("ﬁ", "fi").replace("ﬂ", "fl")
+    text = re.sub(r"[\u200b-\u200d\uFEFF\x08]", "", text)
     text = re.sub(r"[ \t]+", " ", text)
-
     text = re.sub(r"\n{3,}", "\n\n", text)
-
     return text.strip()
 
 
-def normalize_line(line: Any) -> str:
-    line = normalize_text(line)
-    line = re.sub(r"\s+", " ", line)
-    return line.strip()
-
-
-def clean_value(value: Any) -> Optional[str]:
-    if value is None:
-        return None
-
-    value = normalize_line(value)
-
-    if not value:
-        return None
-
-    return value
-
-
-# ============================================================
-# UNIQUE LIST
-# ============================================================
-
 def unique_list(values: Any) -> List[Any]:
-
     if values is None:
         return []
-
-    if isinstance(values, (str, int, float)):
+    if isinstance(values, str):
         values = [values]
-
-    if not isinstance(values, (list, tuple, set)):
+    if not isinstance(values, list):
         return []
-
+    seen = set()
     result = []
-
-    for value in values:
-
-        if value is None:
-            continue
-
-        if isinstance(value, (int, float)):
-
-            if value not in result:
-                result.append(value)
-
-            continue
-
-        value = normalize_line(value)
-
-        if not value:
-            continue
-
-        if not any(
-            str(existing).lower() == value.lower()
-            for existing in result
-        ):
-            result.append(value)
-
+    for item in values:
+        if item is not None and str(item).strip():
+            clean_item = str(item).strip()
+            if clean_item.lower() not in seen:
+                seen.add(clean_item.lower())
+                result.append(clean_item)
     return result
 
 
-# ============================================================
-# SIZE
-# ============================================================
-
-SIZE_PATTERNS = [
-
-    r"\b\d{2,4}\s*[x×X]\s*\d{2,4}\s*mm\b",
-
-    r"\b\d{2,4}\s*\*\s*\d{2,4}\s*mm\b",
-
-    r"\b\d{2,4}\s+by\s+\d{2,4}\s*mm\b",
-]
-
-
-def normalize_size(value: str) -> Optional[str]:
-
-    if not value:
-        return None
-
-    value = normalize_line(value)
-
-    match = re.search(
-        r"(\d{2,4})\s*[x×X*]\s*(\d{2,4})\s*mm",
-        value,
-        re.IGNORECASE
-    )
-
-    if match:
-        return (
-            f"{match.group(1)}x{match.group(2)}mm"
-        ).lower()
-
-    match = re.search(
-        r"(\d{2,4})\s+by\s+(\d{2,4})\s*mm",
-        value,
-        re.IGNORECASE
-    )
-
-    if match:
-        return (
-            f"{match.group(1)}x{match.group(2)}mm"
-        ).lower()
-
-    return None
-
-
-def find_sizes(text: str) -> List[str]:
-
-    if not text:
-        return []
-
-    text = normalize_text(text)
-
-    result = []
-
-    for pattern in SIZE_PATTERNS:
-
-        matches = re.findall(
-            pattern,
-            text,
-            re.IGNORECASE
-        )
-
-        for match in matches:
-
-            if isinstance(match, tuple):
-                raw = "x".join(match) + "mm"
-            else:
-                raw = match
-
-            value = normalize_size(raw)
-
-            if value and value not in result:
-                result.append(value)
-
-    # Handle broken PDF text:
-    # 5 9 8 x 1 1 9 8 m m
-
-    compact = re.sub(
-        r"(?<=\d)\s+(?=\d)",
-        "",
-        text
-    )
-
-    matches = re.findall(
-        r"\b(\d{2,4})\s*[x×X*]\s*(\d{2,4})\s*mm\b",
-        compact,
-        re.IGNORECASE
-    )
-
-    for match in matches:
-
-        value = normalize_size(
-            f"{match[0]}x{match[1]}mm"
-        )
-
-        if value and value not in result:
-            result.append(value)
-
-    return result
+def clean_doc_name(filename: str) -> str:
+    base = os.path.splitext(filename or "document")[0]
+    return re.sub(r"[^a-zA-Z0-9_-]", "_", base)
 
 
 # ============================================================
-# FINISH
+# CONSTANTS & REGEXES
 # ============================================================
 
-FINISH_PATTERNS = [
-
-    (r"\bprotect\b", "Protect"),
-    (r"\bpolished\b", "Polished"),
-    (r"\bpolish\b", "Polished"),
-    (r"\bmatt\b", "Matt"),
-    (r"\bmatte\b", "Matt"),
-    (r"\bhoned\b", "Honed"),
-    (r"\bsatin\b", "Satin"),
-    (r"\bglossy\b", "Glossy"),
-    (r"\bgloss\b", "Gloss"),
-    (r"\blappato\b", "Lappato"),
-    (r"\bcarving\b", "Carving"),
-    (r"\bstructured\b", "Structured"),
-    (r"\btextured\b", "Textured"),
-]
-
-
-def find_surface(text: str) -> List[str]:
-
-    if not text:
-        return []
-
-    result = []
-
-    for pattern, value in FINISH_PATTERNS:
-
-        if re.search(
-            pattern,
-            text,
-            re.IGNORECASE
-        ):
-
-            if value not in result:
-                result.append(value)
-
-    return result
-
-
-# ============================================================
-# TEXTURE
-# ============================================================
-
-TEXTURE_WORDS = [
-
-    "Grid",
-    "Dune",
-    "Brick",
-    "Soil",
-    "Stone",
-    "Wood",
-    "Marble",
-    "Concrete",
-    "Terrazzo",
-    "Slate",
-    "Rock",
-    "Flute",
-    "Linear",
-    "Wave",
-    "Geometric",
-    "Floral",
-    "Petals",
-    "Loop",
-    "Geo",
-    "Heritage",
-]
-
-
-def find_texture(text: str) -> List[str]:
-
-    if not text:
-        return []
-
-    result = []
-
-    for value in TEXTURE_WORDS:
-
-        if re.search(
-            rf"\b{re.escape(value)}\b",
-            text,
-            re.IGNORECASE
-        ):
-
-            result.append(value)
-
-    return result
-
-
-# ============================================================
-# APPLICATION
-# ============================================================
-
-APPLICATION_PATTERNS = [
-
-    (r"\bfloor\b", "Floor"),
-    (r"\bwall\b", "Wall"),
-    (r"\bflooring\b", "Floor"),
-    (r"\bwalling\b", "Wall"),
-    (r"\bindoor\b", "Indoor"),
-    (r"\boutdoor\b", "Outdoor"),
-]
-
-
-def find_application(text: str) -> List[str]:
-
-    if not text:
-        return []
-
-    result = []
-
-    for pattern, value in APPLICATION_PATTERNS:
-
-        if re.search(
-            pattern,
-            text,
-            re.IGNORECASE
-        ):
-
-            if value not in result:
-                result.append(value)
-
-    return result
-
-
-# ============================================================
-# CATEGORY
-# ============================================================
-
-CATEGORY_PATTERNS = [
-
-    (
-        r"\bFULL\s*BODY\s+VITRIFIED\s+TILES?\b",
-        "FULLBODY VITRIFIED TILES"
-    ),
-
-    (
-        r"\bFULL\s*BODY\s+VITRIFIED\b",
-        "FULLBODY VITRIFIED TILES"
-    ),
-
-    (
-        r"\bFULL\s*BODY\s+PORCELAIN\s+TILES?\b",
-        "FULL BODY PORCELAIN TILES"
-    ),
-
-    (
-        r"\bFULL\s*BODY\s+PORCELAIN\b",
-        "FULL BODY PORCELAIN TILES"
-    ),
-
-    (
-        r"\bGLAZED\s+VITRIFIED\s+TILES?\b",
-        "GLAZED VITRIFIED TILES"
-    ),
-
-    (
-        r"\bGLAZED\s+VITRIFIED\b",
-        "GLAZED VITRIFIED TILES"
-    ),
-
-    (
-        r"\bGLAZED\s+PORCELAIN\s+TILES?\b",
-        "GLAZED PORCELAIN TILES"
-    ),
-
-    (
-        r"\bGLAZED\s+PORCELAIN\b",
-        "GLAZED PORCELAIN TILES"
-    ),
-
-    (
-        r"\bPORCELAIN\s+TILES?\b",
-        "PORCELAIN TILES"
-    ),
-
-    (
-        r"\bCERAMIC\s+TILES?\b",
-        "CERAMIC TILES"
-    ),
-
-    (
-        r"\bCERAMIC\b",
-        "CERAMIC TILES"
-    ),
-]
-
-
-def find_category(text: str) -> Optional[str]:
-
-    if not text:
-        return None
-
-    normalized = normalize_text(text)
-
-    for pattern, category in CATEGORY_PATTERNS:
-
-        if re.search(
-            pattern,
-            normalized,
-            re.IGNORECASE
-        ):
-            return category
-
-    return None
-
-
-# ============================================================
-# COLLECTION
-# ============================================================
-
-def find_collection(text: str) -> Optional[str]:
-
-    if not text:
-        return None
-
-    normalized = normalize_text(text)
-
-    patterns = [
-
-        r"\b([A-Za-z][A-Za-z0-9&'/-]*(?:\s+[A-Za-z][A-Za-z0-9&'/-]*){0,5})\s+COLLECTION\b",
-
-        r"\bCOLLECTION\s*[:\-]\s*([A-Za-z0-9&' /-]+)",
-
-    ]
-
-    for pattern in patterns:
-
-        matches = re.findall(
-            pattern,
-            normalized,
-            re.IGNORECASE
-        )
-
-        for match in matches:
-
-            value = normalize_line(match)
-
-            if not value:
-                continue
-
-            if value.lower() == "collection":
-                continue
-
-            if len(value) > 80:
-                continue
-
-            return value.upper()
-
-    return None
-
-
-# ============================================================
-# METADATA LABEL EXTRACTION
-# ============================================================
-
-def extract_labeled_value(
-    text: str,
-    labels: List[str]
-) -> Optional[str]:
-
-    if not text:
-        return None
-
-    lines = [
-        normalize_line(x)
-        for x in text.splitlines()
-        if normalize_line(x)
-    ]
-
-    label_pattern = "|".join(
-        re.escape(label)
-        for label in labels
-    )
-
-    # Same-line:
-    # Color: Beige
-    # Colour - Grey
-    # Design: Marble
-
-    same_line = re.compile(
-        rf"^\s*(?:{label_pattern})\s*"
-        rf"[:\-–—]\s*(.+?)\s*$",
-        re.IGNORECASE
-    )
-
-    for index, line in enumerate(lines):
-
-        match = same_line.match(line)
-
-        if match:
-
-            value = clean_metadata_value(
-                match.group(1)
-            )
-
-            if value:
-                return value
-
-        # Label and value separated:
-        #
-        # Colour
-        # Beige
-
-        if re.fullmatch(
-            rf"(?:{label_pattern})",
-            line,
-            re.IGNORECASE
-        ):
-
-            if index + 1 < len(lines):
-
-                value = clean_metadata_value(
-                    lines[index + 1]
-                )
-
-                if value:
-                    return value
-
-    return None
-
-
-def clean_metadata_value(value: str) -> Optional[str]:
-
-    if not value:
-        return None
-
-    value = normalize_line(value)
-
-    value = re.sub(
-        r"^(?:[:\-–—|]+)\s*",
-        "",
-        value
-    )
-
-    # Stop accidental next metadata fields
-
-    value = re.split(
-        r"\b(?:size|surface|finish|texture|"
-        r"application|collection|category|"
-        r"colour|color|design)\s*[:\-–—]",
-        value,
-        maxsplit=1,
-        flags=re.IGNORECASE
-    )[0]
-
-    value = normalize_line(value)
-
-    if not value:
-        return None
-
-    if len(value) > 100:
-        return None
-
-    return value
-
-
-def find_color(text: str) -> Optional[str]:
-
-    return extract_labeled_value(
-        text,
-        [
-            "Color",
-            "Colour",
-            "Colors",
-            "Colours",
-            "Shade",
-            "Colour Name",
-            "Color Name"
-        ]
-    )
-
-
-def find_design(text: str) -> List[str]:
-
-    value = extract_labeled_value(
-        text,
-        [
-            "Design",
-            "Design Name",
-            "Pattern",
-            "Pattern Name"
-        ]
-    )
-
-    if not value:
-        return []
-
-    return [value]
-
-
-# ============================================================
-# PRODUCT NAME
-# ============================================================
-
-REJECTED_PRODUCT_NAMES = {
-
-    "application",
-    "collection",
-    "options",
-    "suggestions",
-    "tiles",
-    "tile",
-    "floor",
-    "wall",
-    "surface",
-    "texture",
-    "protect",
-    "polished",
-    "matt",
-    "matte",
-    "base",
-    "border",
-    "corner",
-    "size",
-    "finish",
-    "design",
-    "colour",
-    "color",
-    "product",
-    "products",
-    "catalogue",
-    "catalog",
-    "contents",
-    "index",
-    "technical",
-    "specification",
-    "specifications",
-    "pattern",
-    "shade",
+CODE_REGEX = re.compile(
+    r"\b([A-Z]{1,3}\d{4,8}(?:-[A-Z0-9]+)?|[A-Z]{2,5}-\d{3,6})\b"
+)
+
+PRICE_REGEX = re.compile(
+    r"(?:₹|Rs\.?|INR)\s*([\d,]+(?:\.\d{2})?)",
+    re.IGNORECASE
+)
+
+SIZE_REGEX = re.compile(
+    r"\b(\d{2,4}\s*[x×X*]\s*\d{2,4}(?:\s*[x×X*]\s*\d{2,4})?\s*(?:mm|cm)?)\b",
+    re.IGNORECASE
+)
+
+FINISH_MAP = {
+    "chrome": "Chrome",
+    "gun metal": "Gun Metal",
+    "gunmetal": "Gun Metal",
+    "rose gold": "Rose Gold",
+    "rosegold": "Rose Gold",
+    "matt black": "Matt Black",
+    "matte black": "Matt Black",
+    "french gold": "French Gold",
+    "white": "White",
+    "ivory": "Ivory",
+    "black": "Black",
+    "polished": "Polished",
+    "matt": "Matt",
+    "matte": "Matt",
+    "glossy": "Glossy",
+    "high gloss": "High Gloss",
+    "satin": "Satin",
+    "carving": "Carving",
+    "rocker": "Rocker",
+    "protect": "Protect",
+    "sugar": "Sugar",
+    "leather": "Leather",
 }
 
 
-def clean_product_name(
-    name: str
-) -> Optional[str]:
+# ============================================================
+# IMAGE EXTRACTION & STORAGE
+# ============================================================
 
-    if not name:
+def get_images_output_dir(safe_doc_name: str) -> str:
+    dir_path = os.path.join("extracted_images", safe_doc_name, "product_crops")
+    os.makedirs(dir_path, exist_ok=True)
+    return dir_path
+
+
+def save_image_from_xref(doc: pymupdf.Document, xref: int, output_dir: str, safe_doc_name: str, prefix: str) -> Optional[str]:
+    try:
+        base_img = doc.extract_image(xref)
+        if not base_img:
+            return None
+        image_bytes = base_img.get("image")
+        image_ext = base_img.get("ext", "png")
+        if not image_bytes or len(image_bytes) < 300:
+            return None
+
+        # Verify image dimensions
+        img = Image.open(io.BytesIO(image_bytes))
+        width, height = img.size
+        if width < 25 or height < 25:
+            return None
+
+        image_name = f"{prefix}.{image_ext}"
+        image_path = os.path.join(output_dir, image_name)
+        with open(image_path, "wb") as f:
+            f.write(image_bytes)
+
+        return f"extracted_images/{safe_doc_name}/product_crops/{image_name}"
+    except Exception as e:
         return None
 
-    name = normalize_line(name)
 
-    name = re.sub(
-        r"^\s*[-–—]?\s*\d+\s*[-–—.)]?\s*",
-        "",
-        name
-    )
+def crop_image_from_bbox(page: pymupdf.Page, bbox: List[float], output_dir: str, safe_doc_name: str, prefix: str) -> Optional[str]:
+    try:
+        crop_rect = pymupdf.Rect(bbox[0] - 5, bbox[1] - 5, bbox[2] + 5, bbox[3] + 5)
+        if crop_rect.width < 25 or crop_rect.height < 25:
+            return None
 
-    name = re.sub(
-        r"\s*[-–—|:]+\s*$",
-        "",
-        name
-    )
+        pix = page.get_pixmap(
+            matrix=pymupdf.Matrix(2.5, 2.5),
+            clip=crop_rect,
+            alpha=False
+        )
 
-    if not name:
+        image_name = f"{prefix}.png"
+        image_path = os.path.join(output_dir, image_name)
+        pix.save(image_path)
+
+        return f"extracted_images/{safe_doc_name}/product_crops/{image_name}"
+    except Exception as e:
         return None
 
-    if name.lower() in REJECTED_PRODUCT_NAMES:
-        return None
-
-    if not re.search(
-        r"[A-Za-z]",
-        name
-    ):
-        return None
-
-    if len(name) > 80:
-        return None
-
-    return name
-
 
 # ============================================================
-# EXPLICIT FLOOR / WALL PRODUCT
+# SPATIAL CATALOG PARSER
 # ============================================================
 
-def extract_name_from_detail_line(
-    line: str
-):
-
-    line = normalize_line(line)
-
-    if not line:
-        return None
-
-    line = re.sub(
-        r"^\d+\s+\d+\s+",
-        "",
-        line
-    ).strip()
-
-    pattern = re.compile(
-        r"^(Floor|Wall)"
-        r"(?:\s*[-–—:]?\s*\d+)?"
-        r"\s+"
-        r"(.+?)$",
-        re.IGNORECASE
-    )
-
-    match = pattern.match(line)
-
-    if not match:
-        return None
-
-    application = match.group(1).title()
-
-    name = clean_product_name(
-        match.group(2)
-    )
-
-    if not name:
-        return None
-
-    # Remove accidental metadata
-
-    name = re.split(
-        r"\b(?:Size|Surface|Texture|Collection|"
-        r"Application|Finish|Design|Colour|Color)\b",
-        name,
-        maxsplit=1,
-        flags=re.IGNORECASE
-    )[0]
-
-    name = clean_product_name(name)
-
-    if not name:
-        return None
-
-    return {
-        "name": name,
-        "application": application
-    }
-
-
-# ============================================================
-# GENERIC PRODUCT NAME HEURISTIC
-# ============================================================
-
-def looks_like_product_name(
-    line: str
-) -> bool:
-
-    line = normalize_line(line)
-
-    if not line:
-        return False
-
-    lower = line.lower()
-
-    if lower in REJECTED_PRODUCT_NAMES:
-        return False
-
-    # Never accept obvious metadata
-
-    metadata_words = [
-
-        "size",
-        "surface",
-        "finish",
-        "texture",
-        "application",
-        "collection",
-        "technical",
-        "specification",
-        "thickness",
-        "shade",
-        "available",
-        "packing",
-        "pcs",
-        "box",
-        "sqm",
-        "mm",
-        "colour",
-        "color",
-        "design",
-        "pattern",
-        "catalogue",
-        "catalog",
-    ]
-
-    for word in metadata_words:
-
-        if re.search(
-            rf"\b{re.escape(word)}\b",
-            lower
-        ):
-            return False
-
-    if not re.search(
-        r"[A-Za-z]",
-        line
-    ):
-        return False
-
-    if re.search(
-        r"\d{2,4}\s*[x×X*]\s*\d{2,4}",
-        line
-    ):
-        return False
-
-    if len(line.split()) > 7:
-        return False
-
-    if len(line) > 70:
-        return False
-
-    # Avoid obvious headings
-
-    heading_words = [
-        "welcome",
-        "contents",
-        "introduction",
-        "technical data",
-        "technical specification",
-        "index",
-        "contact us",
-        "about us",
-    ]
-
-    if lower in heading_words:
-        return False
-
-    return True
-
-
-# ============================================================
-# GENERIC BLOCK PARSER
-# ============================================================
-
-def parse_detail_blocks(
-    page_text: str
-):
-
-    raw_lines = page_text.splitlines()
-
-    lines = []
-
-    for raw in raw_lines:
-
-        line = normalize_line(raw)
-
-        if line:
-            lines.append(line)
-
-    candidates = []
-
-    # --------------------------------------------------------
-    # PASS 1
-    # Explicit Floor / Wall product lines
-    # --------------------------------------------------------
-
-    explicit_indexes = []
-
-    for index, line in enumerate(lines):
-
-        detail = extract_name_from_detail_line(line)
-
-        if detail:
-            explicit_indexes.append(
-                (index, detail)
-            )
-
-    for position, (index, detail) in enumerate(
-        explicit_indexes
-    ):
-
-        if position + 1 < len(explicit_indexes):
-
-            end_index = explicit_indexes[
-                position + 1
-            ][0]
-
-        else:
-
-            end_index = len(lines)
-
-        block_lines = lines[
-            index:end_index
-        ]
-
-        block_text = "\n".join(
-            block_lines
-        )
-
-        sizes = find_sizes(block_text)
-        finishes = find_surface(block_text)
-        textures = find_texture(block_text)
-
-        color = find_color(block_text)
-        design = find_design(block_text)
-
-        candidates.append({
-
-            "productName":
-                detail["name"],
-
-            "application":
-                [detail["application"]],
-
-            "size":
-                unique_list(sizes),
-
-            "finish":
-                unique_list(finishes),
-
-            "texture":
-                unique_list(textures),
-
-            "color":
-                color,
-
-            "design":
-                unique_list(design),
-
-            "lineIndex":
-                index,
-
-            "blockText":
-                block_text
-        })
-
-    # --------------------------------------------------------
-    # PASS 2
-    # Generic layout
-    #
-    # Product name may be on its own line.
-    #
-    # Example:
-    #
-    # BLACK BEACH
-    # 598x598mm
-    # Protect
-    # Dune
-    # Colour: Black
-    # Design: Stone
-    # --------------------------------------------------------
-
-    used_names = {
-        c["productName"].lower()
-        for c in candidates
-        if c.get("productName")
-    }
-
-    for index, line in enumerate(lines):
-
-        if not looks_like_product_name(line):
-            continue
-
-        name = clean_product_name(line)
-
-        if not name:
-            continue
-
-        if name.lower() in used_names:
-            continue
-
-        # ----------------------------------------------------
-        # Look around product name.
-        # ----------------------------------------------------
-
-        start = max(
-            0,
-            index - 2
-        )
-
-        end = min(
-            len(lines),
-            index + 15
-        )
-
-        nearby_lines = lines[
-            start:end
-        ]
-
-        nearby_text = "\n".join(
-            nearby_lines
-        )
-
-        sizes = find_sizes(
-            nearby_text
-        )
-
-        finishes = find_surface(
-            nearby_text
-        )
-
-        textures = find_texture(
-            nearby_text
-        )
-
-        application = find_application(
-            nearby_text
-        )
-
-        color = find_color(
-            nearby_text
-        )
-
-        design = find_design(
-            nearby_text
-        )
-
-        # ----------------------------------------------------
-        # Strong evidence
-        #
-        # Generic name is accepted only when nearby metadata
-        # proves that this is likely a tile product.
-        # ----------------------------------------------------
-
-        evidence_count = 0
-
-        if sizes:
-            evidence_count += 1
-
-        if finishes:
-            evidence_count += 1
-
-        if textures:
-            evidence_count += 1
-
-        if color:
-            evidence_count += 1
-
-        if design:
-            evidence_count += 1
-
-        if not application:
-            application = []
-
-        # At least one strong tile-related signal
-        if evidence_count == 0:
-            continue
-
-        candidates.append({
-
-            "productName":
-                name,
-
-            "application":
-                unique_list(application),
-
-            "size":
-                unique_list(sizes),
-
-            "finish":
-                unique_list(finishes),
-
-            "texture":
-                unique_list(textures),
-
-            "color":
-                color,
-
-            "design":
-                unique_list(design),
-
-            "lineIndex":
-                index,
-
-            "blockText":
-                nearby_text
-        })
-
-        used_names.add(
-            name.lower()
-        )
-
-    return candidates
-
-
-# ============================================================
-# PAGE CONTEXT
-# ============================================================
-
-def build_page_category_context(
-    page_text: str
-):
-
-    return {
-
-        "category":
-            find_category(page_text),
-
-        "collection":
-            find_collection(page_text)
-    }
-
-
-# ============================================================
-# PRODUCT KEY
-# ============================================================
-
-def product_key(product):
-
-    name = normalize_line(
-        product.get(
-            "productName",
-            ""
-        )
-    ).lower()
-
-    return name
-
-
-# ============================================================
-# MERGE PRODUCTS
-# ============================================================
-
-def merge_products(products):
-
-    merged = {}
-
-    for product in products:
-
-        key = product_key(product)
-
-        if not key:
-            continue
-
-        if key not in merged:
-
-            merged[key] = {
-
-                "productName":
-                    product.get(
-                        "productName"
-                    ),
-
-                "category":
-                    product.get(
-                        "category"
-                    ),
-
-                "collection":
-                    product.get(
-                        "collection"
-                    ),
-
-                "size":
-                    unique_list(
-                        product.get(
-                            "size"
-                        )
-                    ),
-
-                "finish":
-                    unique_list(
-                        product.get(
-                            "finish"
-                        )
-                    ),
-
-                "texture":
-                    unique_list(
-                        product.get(
-                            "texture"
-                        )
-                    ),
-
-                "application":
-                    unique_list(
-                        product.get(
-                            "application"
-                        )
-                    ),
-
-                "color":
-                    product.get(
-                        "color"
-                    ),
-
-                "design":
-                    unique_list(
-                        product.get(
-                            "design"
-                        )
-                    ),
-
-                "image":
-                    product.get(
-                        "image"
-                    ),
-
-                "images":
-                    unique_list(
-                        product.get(
-                            "images"
-                        )
-                    ),
-
-                "pages":
-                    unique_list(
-                        product.get(
-                            "pages"
-                        )
+def parse_catalog_document(doc: pymupdf.Document, filename: str) -> List[Dict[str, Any]]:
+    safe_doc = clean_doc_name(filename)
+    output_dir = get_images_output_dir(safe_doc)
+    
+    products = []
+    current_collection = "General Collection"
+    current_category = "Ceramic & Bathware"
+    
+    total_pages = len(doc)
+    
+    for page_idx in range(total_pages):
+        page = doc[page_idx]
+        page_num = page_idx + 1
+        
+        words = page.get_text("words")
+        blocks = page.get_text("blocks")
+        
+        # 1. Update Collection & Category from page headers
+        for b in blocks:
+            b_text = normalize_text(b[4])
+            if "COLLECTION" in b_text.upper():
+                coll_m = re.sub(r"\s*COLLECTION\s*", "", b_text, flags=re.IGNORECASE).strip()
+                if 2 < len(coll_m) < 40 and not any(w in coll_m.upper() for w in ["BATHWARE", "PRICE", "2026", "2025"]):
+                    current_collection = coll_m
+            for cat_keyword in ["KITCHEN FAUCET", "BASIN MIXER", "WALL MIXER", "BATH SPOUT", "BIB TAP", "PILLAR", "UPPER TRIM", "ANGLE VALVE", "SHOWER", "SANITARYWARE", "FULLBODY", "VITRIFIED"]:
+                if cat_keyword in b_text.upper():
+                    current_category = cat_keyword.title()
+                    
+        # 2. Extract Valid Product Photos on Page (filter out swatches / icons / sidebars)
+        page_images = page.get_image_info(xrefs=True)
+        valid_images = []
+        for img in page_images:
+            bbox = img.get("bbox")
+            width = bbox[2] - bbox[0]
+            height = bbox[3] - bbox[1]
+            if width >= 25 and height >= 25 and width < page.rect.width * 0.85 and height < page.rect.height * 0.85:
+                valid_images.append({
+                    "xref": img.get("xref"),
+                    "bbox": bbox,
+                    "x_center": (bbox[0] + bbox[2]) / 2,
+                    "y_top": bbox[1],
+                    "y_bottom": bbox[3],
+                    "width": width,
+                    "height": height
+                })
+                
+        # 3. Extract all Prices with bounding boxes
+        page_prices = []
+        for b in blocks:
+            b_text = normalize_text(b[4])
+            for line in b_text.split("\n"):
+                p_match = PRICE_REGEX.search(line)
+                if p_match:
+                    page_prices.append({
+                        "price": f"₹ {p_match.group(1)}",
+                        "x_center": (b[0] + b[2]) / 2,
+                        "y_center": (b[1] + b[3]) / 2,
+                        "bbox": (b[0], b[1], b[2], b[3])
+                    })
+                    
+        # 4. Extract all Titles with bounding boxes
+        page_titles = []
+        for b in blocks:
+            b_text = normalize_text(b[4])
+            if not CODE_REGEX.search(b_text) and not PRICE_REGEX.search(b_text):
+                if 3 < len(b_text) < 70 and not any(w in b_text.upper() for w in ["COLLECTION", "BATHWARE", "PRICE LIST", "PAGE"]):
+                    # Don't include single finish words like "Chrome" as title
+                    if b_text.lower() not in FINISH_MAP:
+                        page_titles.append({
+                            "text": b_text.replace("\n", " "),
+                            "x_center": (b[0] + b[2]) / 2,
+                            "y_top": b[1],
+                            "y_bottom": b[3]
+                        })
+                        
+        # 5. Extract Product Codes & Perform Spatial Row Matching
+        page_codes = []
+        for w in words:
+            m = CODE_REGEX.search(w[4])
+            if m:
+                page_codes.append({
+                    "code": m.group(1),
+                    "x0": w[0],
+                    "y0": w[1],
+                    "x1": w[2],
+                    "y1": w[3],
+                    "x_center": (w[0] + w[2]) / 2,
+                    "y_center": (w[1] + w[3]) / 2
+                })
+                
+        page_extracted_count = 0
+        
+        # METHOD A: Extract Code-Driven Products (Faucets, Fittings, Bathware, Sanitaryware)
+        for c in page_codes:
+            code_str = c["code"]
+            cx = c["x_center"]
+            cy = c["y_center"]
+            
+            # --- Match Price ---
+            matched_price = None
+            best_price_dist = 9999
+            for p in page_prices:
+                # Same row (vertical distance within 22px) and horizontally nearby to right/center
+                if abs(p["y_center"] - cy) < 22 and p["x_center"] >= cx - 35 and p["x_center"] <= cx + 180:
+                    dist = abs(p["y_center"] - cy) + abs(p["x_center"] - cx) * 0.1
+                    if dist < best_price_dist:
+                        best_price_dist = dist
+                        matched_price = p["price"]
+                        
+            # --- Match Color / Finish ---
+            finish = "Chrome"
+            if "-GM" in code_str: finish = "Gun Metal"
+            elif "-RG" in code_str: finish = "Rose Gold"
+            elif "-MB" in code_str or "-BK" in code_str: finish = "Matt Black"
+            elif "-FG" in code_str: finish = "French Gold"
+            elif "-WH" in code_str: finish = "White"
+            else:
+                # Check words on the same row to the left
+                for w in words:
+                    if abs(w[1] - cy) < 16 and w[0] < cx and w[0] > cx - 130:
+                        for k, val in FINISH_MAP.items():
+                            if k == w[4].lower() or k in w[4].lower():
+                                finish = val
+                                break
+                                
+            # --- Match Title ---
+            matched_title = ""
+            best_title_dist = 9999
+            for t in page_titles:
+                # Located above the code table (up to 180px above) and in similar column
+                if t["y_bottom"] <= cy + 12 and t["y_bottom"] >= cy - 180:
+                    if abs(t["x_center"] - cx) < 130:
+                        dist = cy - t["y_bottom"]
+                        if dist < best_title_dist:
+                            best_title_dist = dist
+                            matched_title = t["text"]
+                            
+            # --- Match Product Photo ---
+            # The product photo is located directly above the title or code table in the column
+            matched_img = None
+            best_img_dist = 9999
+            for img in valid_images:
+                if img["y_bottom"] <= cy + 20 and img["y_bottom"] >= cy - 320:
+                    if abs(img["x_center"] - cx) < 120:
+                        dist = cy - img["y_bottom"]
+                        if dist < best_img_dist:
+                            best_img_dist = dist
+                            matched_img = img
+                            
+            # Save Image
+            img_rel_path = None
+            if matched_img:
+                safe_code = re.sub(r"[^a-zA-Z0-9_-]", "_", code_str)
+                if matched_img.get("xref"):
+                    img_rel_path = save_image_from_xref(
+                        doc, matched_img["xref"], output_dir, safe_doc,
+                        f"p{page_num}-{safe_code}"
                     )
-            }
-
-            continue
-
-        existing = merged[key]
-
-        existing["size"] = unique_list(
-            existing.get("size", [])
-            +
-            unique_list(
-                product.get("size")
-            )
-        )
-
-        existing["finish"] = unique_list(
-            existing.get("finish", [])
-            +
-            unique_list(
-                product.get("finish")
-            )
-        )
-
-        existing["texture"] = unique_list(
-            existing.get("texture", [])
-            +
-            unique_list(
-                product.get("texture")
-            )
-        )
-
-        existing["application"] = unique_list(
-            existing.get("application", [])
-            +
-            unique_list(
-                product.get("application")
-            )
-        )
-
-        existing["design"] = unique_list(
-            existing.get("design", [])
-            +
-            unique_list(
-                product.get("design")
-            )
-        )
-
-        # ----------------------------------------------------
-        # Color
-        # Never overwrite a real value with None.
-        # ----------------------------------------------------
-
-        if not existing.get("color"):
-
-            new_color = product.get(
-                "color"
-            )
-
-            if new_color:
-                existing["color"] = new_color
-
-        # ----------------------------------------------------
-        # Category / Collection
-        # ----------------------------------------------------
-
-        if not existing.get("category"):
-
-            existing["category"] = product.get(
-                "category"
-            )
-
-        if not existing.get("collection"):
-
-            existing["collection"] = product.get(
-                "collection"
-            )
-
-        # ----------------------------------------------------
-        # Image
-        # ----------------------------------------------------
-
-        if not existing.get("image"):
-
-            existing["image"] = product.get(
-                "image"
-            )
-
-        existing["images"] = unique_list(
-            existing.get("images", [])
-            +
-            unique_list(
-                product.get("images")
-            )
-        )
-
-        existing["pages"] = sorted(
-            set(
-                int(page)
-                for page in (
-                    unique_list(
-                        existing.get("pages")
+                if not img_rel_path:
+                    img_rel_path = crop_image_from_bbox(
+                        page, matched_img["bbox"], output_dir, safe_doc,
+                        f"p{page_num}-{safe_code}"
                     )
-                    +
-                    unique_list(
-                        product.get("pages")
-                    )
-                )
-                if str(page).isdigit()
-            )
-        )
 
-    return list(
-        merged.values()
-    )
-
-
-# ============================================================
-# PRODUCT EXTRACTION
-# ============================================================
-
-def extract_products_from_pdf(
-    reader
-):
-
-    detected = []
-
-    page_count = len(
-        reader.pages
-    )
-
-    page_texts = {}
-
-    # --------------------------------------------------------
-    # Extract all page text
-    # --------------------------------------------------------
-
-    for page_number, page in enumerate(
-        reader.pages,
-        start=1
-    ):
-
-        try:
-
-            text = (
-                page.extract_text()
-                or ""
-            )
-
-            page_texts[
-                page_number
-            ] = normalize_text(text)
-
-        except Exception as error:
-
-            print(
-                f"Text extraction failed "
-                f"page={page_number}: {error}"
-            )
-
-            page_texts[
-                page_number
-            ] = ""
-
-    active_category = None
-    active_collection = None
-
-    # --------------------------------------------------------
-    # Process pages
-    # --------------------------------------------------------
-
-    for page_number in range(
-        1,
-        page_count + 1
-    ):
-
-        page_text = page_texts.get(
-            page_number,
-            ""
-        )
-
-        if not page_text:
-            continue
-
-        context = build_page_category_context(
-            page_text
-        )
-
-        page_category = context.get(
-            "category"
-        )
-
-        page_collection = context.get(
-            "collection"
-        )
-
-        if page_category:
-            active_category = page_category
-
-        if page_collection:
-            active_collection = page_collection
-
-        candidates = parse_detail_blocks(
-            page_text
-        )
-
-        if not candidates:
-            continue
-
-        for candidate in candidates:
-
-            name = candidate.get(
-                "productName"
-            )
-
-            if not name:
-                continue
-
-            category = (
-                page_category
-                or active_category
-            )
-
-            collection = (
-                page_collection
-                or active_collection
-            )
-
-            detected.append({
-
-                "productName":
-                    name,
-
-                "category":
-                    category,
-
-                "collection":
-                    collection,
-
-                "size":
-                    unique_list(
-                        candidate.get(
-                            "size"
-                        )
-                    ),
-
-                "finish":
-                    unique_list(
-                        candidate.get(
-                            "finish"
-                        )
-                    ),
-
-                "texture":
-                    unique_list(
-                        candidate.get(
-                            "texture"
-                        )
-                    ),
-
-                "application":
-                    unique_list(
-                        candidate.get(
-                            "application"
-                        )
-                    ),
-
-                "color":
-                    candidate.get(
-                        "color"
-                    ),
-
-                "design":
-                    unique_list(
-                        candidate.get(
-                            "design"
-                        )
-                    ),
-
-                "image":
-                    None,
-
-                "images":
-                    [],
-
-                "pages":
-                    [page_number]
+            p_title = matched_title if matched_title else (f"{current_category} ({code_str})" if current_category else f"Product {code_str}")
+            
+            products.append({
+                "productCode": code_str,
+                "productName": p_title,
+                "category": current_category,
+                "collection": current_collection,
+                "size": None,
+                "finish": [finish],
+                "color": finish,
+                "price": matched_price,
+                "image": img_rel_path,
+                "pages": [page_num]
             })
+            page_extracted_count += 1
 
-    return merge_products(
-        detected
-    )
+        # METHOD B: Extract Ceramic & Vitrified Tiles (Named tiles like RIVER GREY with sizes & finishes)
+        for b in blocks:
+            b_text = normalize_text(b[4])
+            found_sizes = SIZE_REGEX.findall(b_text)
+            found_finishes = [val for k, val in FINISH_MAP.items() if re.search(rf"\b{re.escape(k)}\b", b_text, re.IGNORECASE)]
+            
+            if found_sizes or (found_finishes and any(f in found_finishes for f in ["Polished", "Matt", "Glossy", "Carving", "Protect", "Rocker"])):
+                b_lines = [l.strip() for l in b_text.split("\n") if l.strip()]
+                for line in b_lines:
+                    if 3 <= len(line) <= 40 and re.match(r"^[A-Za-z][A-Za-z0-9\s'-]+$", line):
+                        line_lower = line.lower()
+                        if not any(w in line_lower for w in ["collection", "catalogue", "simpolo", "somany", "kajaria", "page", "table", "price", "bathware", "specification", "chrome", "finish", "size", "texture"]):
+                            # Crop tile preview image
+                            b_rect = pymupdf.Rect(b[0], b[1], b[2], b[3])
+                            safe_line = re.sub(r"[^a-zA-Z0-9_-]", "_", line)
+                            
+                            # Check if photo above tile block
+                            tile_img_path = None
+                            for img in valid_images:
+                                if img["y_bottom"] <= b_rect.y0 + 20 and abs(img["x_center"] - (b[0]+b[2])/2) < 120:
+                                    tile_img_path = save_image_from_xref(doc, img["xref"], output_dir, safe_doc, f"p{page_num}-tile-{safe_line}")
+                                    break
+                            if not tile_img_path:
+                                tile_img_path = crop_image_from_bbox(page, [b[0]-20, b[1]-150, b[2]+20, b[1]], output_dir, safe_doc, f"p{page_num}-tile-{safe_line}")
+                                
+                            products.append({
+                                "productCode": None,
+                                "productName": line,
+                                "category": "Ceramic & Vitrified Tiles",
+                                "collection": current_collection or "Tiles Collection",
+                                "size": unique_list([s.replace("×", "x").replace(" ", "") for s in found_sizes]) if found_sizes else None,
+                                "finish": found_finishes if found_finishes else ["Polished"],
+                                "color": found_finishes[0] if found_finishes else "Standard",
+                                "price": None,
+                                "image": tile_img_path,
+                                "pages": [page_num]
+                            })
+                            page_extracted_count += 1
+                            break
 
-
-# ============================================================
-# IMAGE VALIDATION
-# ============================================================
-
-def valid_image_bytes(data):
-
-    if not data:
-        return False
-
-    try:
-
-        image = Image.open(
-            io.BytesIO(data)
-        )
-
-        image.load()
-
-        width, height = image.size
-
-        if width < 100 or height < 100:
-            return False
-
-        if width < 30 or height < 30:
-            return False
-
-        return True
-
-    except Exception:
-
-        return False
-
-
-# ============================================================
-# IMAGE HASH
-# ============================================================
-
-def image_hash(data):
-
-    try:
-
-        return hashlib.sha1(
-            data
-        ).hexdigest()
-
-    except Exception:
-
-        return None
-
-
-# ============================================================
-# PRODUCT NAME SEARCH
-# ============================================================
-
-def find_product_rects(
-    page,
-    product_name
-):
-
-    rects = []
-
-    try:
-
-        rects = page.search_for(
-            product_name
-        )
-
-        if rects:
-            return rects
-
-        target = normalize_line(
-            product_name
-        ).lower()
-
-        blocks = page.get_text(
-            "blocks"
-        )
-
-        for block in blocks:
-
-            text = normalize_line(
-                block[4]
-            )
-
-            if target in text.lower():
-
-                rects.append(
-                    pymupdf.Rect(
-                        block[0],
-                        block[1],
-                        block[2],
-                        block[3]
+        # METHOD C: Scanned / Image-Only Catalogs (e.g. Sanitaryware catalogs without text layers)
+        if page_extracted_count == 0 and valid_images:
+            for img_idx, img_info in enumerate(valid_images[:6]):
+                img_path = save_image_from_xref(
+                    doc, img_info["xref"], output_dir, safe_doc,
+                    f"p{page_num}-item-{img_idx+1}"
+                )
+                if not img_path:
+                    img_path = crop_image_from_bbox(
+                        page, img_info["bbox"], output_dir, safe_doc,
+                        f"p{page_num}-item-{img_idx+1}"
                     )
-                )
+                if img_path:
+                    products.append({
+                        "productCode": f"CAT-{page_num}-{img_idx+1}",
+                        "productName": f"{current_collection} Item {page_num}-{img_idx+1}" if current_collection != "General Collection" else f"Sanitaryware Item {page_num}-{img_idx+1}",
+                        "category": current_category if current_category != "Ceramic & Bathware" else "Sanitaryware",
+                        "collection": current_collection,
+                        "size": None,
+                        "finish": ["Glossy White"],
+                        "color": "White",
+                        "price": None,
+                        "image": img_path,
+                        "pages": [page_num]
+                    })
 
-    except Exception as error:
+    # Deduplicate & Merge Products
+    deduped = {}
+    for p in products:
+        code_part = p.get("productCode") or ""
+        name_part = p.get("productName") or ""
+        key = f"{code_part}::{name_part}".strip().lower()
+        if not key or key == "::":
+            continue
+            
+        if key in deduped:
+            existing = deduped[key]
+            if p.get("finish"):
+                existing["finish"] = unique_list((existing.get("finish") or []) + p["finish"])
+            if p.get("size"):
+                existing["size"] = unique_list((existing.get("size") or []) + p["size"])
+            if not existing.get("image") and p.get("image"):
+                existing["image"] = p["image"]
+            if not existing.get("price") and p.get("price"):
+                existing["price"] = p["price"]
+            if p.get("pages"):
+                existing["pages"] = unique_list(existing.get("pages", []) + p["pages"])
+        else:
+            deduped[key] = p
 
-        print(
-            "Product position error:",
-            error
-        )
-
-    return rects
-
-
-# ============================================================
-# PRODUCT IMAGE CROP
-# ============================================================
-
-def crop_product_image(
-    doc,
-    product,
-    filename
-):
-
-    pages = product.get(
-        "pages"
-    ) or []
-
-    if not pages:
-        return product
-
-    try:
-
-        base_name = os.path.splitext(
-            filename or "document"
-        )[0]
-
-        safe_document = re.sub(
-            r"[^a-zA-Z0-9_-]",
-            "_",
-            base_name
-        )
-
-        output_dir = os.path.join(
-            "extracted_images",
-            safe_document,
-            "product_crops"
-        )
-
-        os.makedirs(
-            output_dir,
-            exist_ok=True
-        )
-
-        product_name = product.get(
-            "productName"
-        )
-
-        if not product_name:
-            return product
-
-        for page_number in pages:
-
-            if not page_number:
-                continue
-
-            if page_number < 1:
-                continue
-
-            if page_number > len(doc):
-                continue
-
-            page = doc[
-                page_number - 1
-            ]
-
-            rects = find_product_rects(
-                page,
-                product_name
-            )
-
-            if not rects:
-                continue
-
-            rect = None
-
-            for candidate_rect in rects:
-
-                if (
-                    candidate_rect.width >= 10
-                    and
-                    candidate_rect.height >= 5
-                ):
-
-                    rect = candidate_rect
-                    break
-
-            if rect is None:
-                rect = rects[0]
-
-            page_width = page.rect.width
-            page_height = page.rect.height
-
-            crop_left = max(
-                0,
-                rect.x0 - 180
-            )
-
-            crop_right = min(
-                page_width,
-                rect.x1 + 180
-            )
-
-            crop_top = max(
-                0,
-                rect.y0 - 120
-            )
-
-            crop_bottom = min(
-                page_height,
-                rect.y1 + 180
-            )
-
-            crop_rect = pymupdf.Rect(
-                crop_left,
-                crop_top,
-                crop_right,
-                crop_bottom
-            )
-
-            if crop_rect.width < 80:
-                continue
-
-            if crop_rect.height < 80:
-                continue
-
-            pix = page.get_pixmap(
-                matrix=pymupdf.Matrix(
-                    2.5,
-                    2.5
-                ),
-                clip=crop_rect,
-                alpha=False
-            )
-
-            safe_product = re.sub(
-                r"[^a-zA-Z0-9]+",
-                "-",
-                product_name.lower()
-            ).strip("-")
-
-            image_name = (
-                f"page-{page_number}-"
-                f"{safe_product}.png"
-            )
-
-            image_path = os.path.join(
-                output_dir,
-                image_name
-            )
-
-            pix.save(
-                image_path
-            )
-
-            relative_path = os.path.join(
-                "extracted_images",
-                safe_document,
-                "product_crops",
-                image_name
-            )
-
-            product["image"] = relative_path
-
-            product["images"] = [
-                {
-                    "page":
-                        page_number,
-
-                    "image":
-                        image_name,
-
-                    "path":
-                        relative_path,
-
-                    "type":
-                        "product_detail_crop"
-                }
-            ]
-
-            return product
-
-    except Exception as error:
-
-        print(
-            f"Product image mapping failed "
-            f"for {product.get('productName')}: "
-            f"{error}"
-        )
-
-    return product
+    return list(deduped.values())
 
 
 # ============================================================
-# MAP PRODUCT IMAGES
-# ============================================================
-
-def map_product_images(
-    products,
-    pdf_bytes,
-    filename
-):
-
-    if not products:
-        return products
-
-    doc = None
-
-    try:
-
-        doc = pymupdf.open(
-            stream=pdf_bytes,
-            filetype="pdf"
-        )
-
-        for product in products:
-
-            crop_product_image(
-                doc,
-                product,
-                filename
-            )
-
-    except Exception as error:
-
-        print(
-            "Product image mapping error:",
-            error
-        )
-
-    finally:
-
-        if doc is not None:
-
-            try:
-                doc.close()
-            except Exception:
-                pass
-
-    return products
-
-
-# ============================================================
-# FINAL CLEAN PRODUCT
-# ============================================================
-
-def clean_product(product):
-
-    return {
-
-        "productName":
-            clean_value(
-                product.get(
-                    "productName"
-                )
-            ),
-
-        "category":
-            clean_value(
-                product.get(
-                    "category"
-                )
-            ),
-
-        "collection":
-            clean_value(
-                product.get(
-                    "collection"
-                )
-            ),
-
-        "size":
-            unique_list(
-                product.get(
-                    "size"
-                )
-            ) or None,
-
-        "finish":
-            unique_list(
-                product.get(
-                    "finish"
-                )
-            ) or None,
-
-        "texture":
-            unique_list(
-                product.get(
-                    "texture"
-                )
-            ) or None,
-
-        "application":
-            unique_list(
-                product.get(
-                    "application"
-                )
-            ) or None,
-
-        "color":
-            clean_value(
-                product.get(
-                    "color"
-                )
-            ),
-
-        "design":
-            unique_list(
-                product.get(
-                    "design"
-                )
-            ) or None,
-
-        "image":
-            product.get(
-                "image"
-            ),
-
-        "images":
-            product.get(
-                "images"
-            ) or [],
-
-        "pages":
-            unique_list(
-                product.get(
-                    "pages"
-                )
-            ) or []
-    }
-
-
-# ============================================================
-# PDF VALIDATION
-# ============================================================
-
-def validate_pdf_bytes(
-    pdf_bytes
-):
-
-    if not pdf_bytes:
-
-        raise HTTPException(
-            status_code=400,
-            detail="Empty PDF file"
-        )
-
-    if not pdf_bytes.startswith(
-        b"%PDF"
-    ):
-
-        raise HTTPException(
-            status_code=400,
-            detail="Invalid PDF file"
-        )
-
-
-# ============================================================
-# PDF EXTRACTION API
+# EXTRACT ENDPOINT (SYNCHRONOUS FOR FASTAPI WORKER THREADPOOL)
 # ============================================================
 
 @app.post("/extract")
-async def extract_pdf(
+def extract_pdf(
     file: UploadFile = File(...)
 ):
+    filename = file.filename or "document.pdf"
 
-    filename = (
-        file.filename
-        or
-        "document.pdf"
-    )
-
-    if not filename.lower().endswith(
-        ".pdf"
-    ):
-
+    if not filename.lower().endswith(".pdf"):
         raise HTTPException(
             status_code=400,
             detail="Only PDF files are allowed"
         )
 
     try:
-
-        # ----------------------------------------------------
-        # Read PDF
-        # ----------------------------------------------------
-
-        pdf_bytes = await file.read()
-
-        validate_pdf_bytes(
-            pdf_bytes
-        )
-
-        # ----------------------------------------------------
-        # Reader
-        # ----------------------------------------------------
-
-        reader = PdfReader(
-            io.BytesIO(
-                pdf_bytes
+        pdf_bytes = file.file.read()
+        if not pdf_bytes or len(pdf_bytes) < 50:
+            raise HTTPException(
+                status_code=400,
+                detail="Uploaded PDF is empty or invalid"
             )
-        )
 
-        pages = len(
-            reader.pages
-        )
-
+        doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
+        pages = len(doc)
         if pages <= 0:
-
             raise HTTPException(
                 status_code=400,
                 detail="PDF contains no pages"
             )
 
-        # ----------------------------------------------------
-        # Full text
-        # ----------------------------------------------------
+        products = parse_catalog_document(doc, filename)
+        doc.close()
 
-        all_text = []
-
-        for page_number, page in enumerate(
-            reader.pages,
-            start=1
-        ):
-
-            try:
-
-                text = (
-                    page.extract_text()
-                    or ""
-                )
-
-                all_text.append(
-                    text
-                )
-
-            except Exception as page_error:
-
-                print(
-                    f"Text extraction failed "
-                    f"page={page_number}: "
-                    f"{page_error}"
-                )
-
-        full_text = normalize_text(
-            "\n".join(
-                all_text
-            )
-        )
-
-        # ----------------------------------------------------
-        # Products
-        # ----------------------------------------------------
-
-        products = extract_products_from_pdf(
-            reader
-        )
-
-        # ----------------------------------------------------
-        # Images
-        # ----------------------------------------------------
-
-        products = map_product_images(
-            products,
-            pdf_bytes,
-            filename
-        )
-
-        # ----------------------------------------------------
-        # Final
-        # ----------------------------------------------------
-
-        clean_products = [
-            clean_product(product)
-            for product in products
-        ]
+        print(f"[AI SERVICE] Successfully extracted {len(products)} products from {filename} ({pages} pages)")
 
         return {
-
-            "success":
-                True,
-
-            "message":
-                "PDF processed successfully",
-
-            "version":
-                "4.0.0",
-
-            "filename":
-                filename,
-
-            "pages":
-                pages,
-
-            "textLength":
-                len(full_text),
-
-            "totalProducts":
-                len(clean_products),
-
-            "products":
-                clean_products
+            "success": True,
+            "message": "PDF processed successfully",
+            "version": "5.0.0",
+            "filename": filename,
+            "pages": pages,
+            "totalProducts": len(products),
+            "products": products
         }
 
     except HTTPException:
-
         raise
-
     except Exception as error:
-
-        print(
-            "PDF extraction error:",
-            error
-        )
-
+        print(f"[AI SERVICE] PDF extraction error for {filename}: {error}")
         raise HTTPException(
             status_code=500,
-            detail=(
-                "PDF extraction failed: "
-                + str(error)
-            )
+            detail=f"PDF extraction failed: {str(error)}"
         )
