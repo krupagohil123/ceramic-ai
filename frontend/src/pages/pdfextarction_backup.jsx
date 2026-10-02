@@ -58,17 +58,14 @@ function PDFExtraction() {
       // ==========================================
       setProgressStatus(`Processing ${uploadData.totalFiles} catalog(s) with AI engine...`);
 
-      const uploadedFiles = uploadData.files.map((file) => ({
-        filename: file.filename,
-        fileName: file.originalName,
-      }));
+      const fileNames = uploadData.files.map((f) => f.filename);
 
       const extractResponse = await fetch("http://localhost:5000/api/ai-extract", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ files: uploadedFiles }),
+        body: JSON.stringify({ filenames: fileNames }),
       });
 
       const extractData = await extractResponse.json();
@@ -79,9 +76,9 @@ function PDFExtraction() {
       }
 
       setExtractSummary(extractData);
-      setMessage(extractData.failedFiles > 0
-        ? `Extracted ${extractData.totalProducts} product(s) from ${extractData.successfulFiles} of ${extractData.totalFiles} catalog(s).`
-        : `Extracted ${extractData.totalProducts} product(s) from all ${extractData.totalFiles} catalog(s).`);
+      setMessage(
+        `Successfully extracted ${extractData.totalProducts} product(s) across ${extractData.successfulFiles} catalog(s)!`
+      );
     } catch (err) {
       console.error("Extraction error:", err);
       setMessage(`Extraction Error: ${err.message}`);
@@ -125,8 +122,8 @@ function PDFExtraction() {
 
           <p>
             Upload one or multiple ceramic, bathware, faucet, and sanitaryware catalogs.
-            Ceramic AI will identify product codes, names, dimensions, surfaces, finishes,
-            colors, collections, and source images when supported by the PDF.
+            Ceramic AI will automatically identify product codes, names, finishes, dimensions,
+            prices, and crop high-resolution product images.
           </p>
         </div>
 
@@ -218,6 +215,7 @@ function PDFExtraction() {
             <span>Category</span>
             <span>Collection</span>
             <span>Finish & Texture</span>
+            <span>Price / MRP (₹)</span>
             <span>Size & Dimensions</span>
             <span>Cropped Images</span>
             <span>Tile Surfaces</span>
@@ -252,9 +250,9 @@ function PDFExtraction() {
               marginTop: "24px",
               padding: "20px",
               borderRadius: "12px",
-              background: extractSummary?.successfulFiles > 0 ? "#0e1e17" : "#1a1616",
-              border: extractSummary?.successfulFiles > 0 ? "1px solid #165b38" : "1px solid #6b2020",
-              color: extractSummary?.successfulFiles > 0 ? "#4ade80" : "#f87171",
+              background: extractSummary ? "#0e1e17" : "#1a1616",
+              border: extractSummary ? "1px solid #165b38" : "1px solid #6b2020",
+              color: extractSummary ? "#4ade80" : "#f87171",
               fontWeight: "600",
             }}
           >
@@ -291,14 +289,14 @@ function PDFExtraction() {
                       justifyContent: "space-between",
                       fontSize: "0.85rem",
                       padding: "4px 0",
-                      color: fileRes.status === "success" ? "#a7f3d0" : "#fca5a5",
+                      color: fileRes.success ? "#a7f3d0" : "#fca5a5",
                     }}
                   >
-                    <span>📄 {fileRes.fileName || fileRes.filename}</span>
+                    <span>📄 {fileRes.filename}</span>
                     <span>
-                      {fileRes.status === "success"
-                        ? `✓ ${fileRes.productCount} products`
-                        : `✗ ${(fileRes.errors || ["Failed"]).join("; ")}`}
+                      {fileRes.success
+                        ? `✓ ${fileRes.pythonResult?.totalProducts || 0} products`
+                        : `✗ ${fileRes.error || "Failed"}`}
                     </span>
                   </div>
                 ))}

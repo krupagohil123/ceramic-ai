@@ -1,0 +1,6143 @@
+{
+  "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+  "totalPages": 57,
+  "totalProducts": 98,
+  "productsWithImage": 98,
+  "productsWithImageNull": 0,
+  "imageCoveragePercent": 100.0,
+  "auditTotals": {
+    "validImageFiles": 98,
+    "missingSourceImages": 0,
+    "extractionFailures": 0,
+    "matchingFailures": 0,
+    "cropFailures": 0,
+    "missingFiles": 0,
+    "invalidFiles": 0,
+    "duplicateImagePaths": 0,
+    "duplicateFilenames": 0,
+    "unexplainedMissingImages": 0
+  },
+  "missingImageProducts": [],
+  "products": [
+    {
+      "productCode": null,
+      "productName": "Spectra Cumin",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p5-1-Spectra_Cumin-c6ce7617db7b4ab998d4cebeb2279280.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 5,
+      "pages": [
+        5
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        1161.3,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 130,
+          "bbox": [
+            56.7,
+            56.5,
+            1138.5,
+            722.5
+          ],
+          "verticalGap": 55.5
+        }
+      ],
+      "assignedImageXref": 130,
+      "assignedImageBbox": [
+        56.7,
+        56.5,
+        1138.5,
+        722.5
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 222895,
+      "imageDimensions": [
+        2254,
+        1387
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p6-1-Spectra_Mushroom-5ffb7ddc1add44fa98020bdd15d85cee.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 6,
+      "pages": [
+        6
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        667.4,
+        172.5,
+        698.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 61,
+          "xref": 304,
+          "bbox": [
+            -0.2,
+            -0.3,
+            541.1,
+            637.5
+          ],
+          "verticalGap": 29.8
+        }
+      ],
+      "assignedImageXref": 304,
+      "assignedImageBbox": [
+        -0.2,
+        -0.3,
+        541.1,
+        637.5
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 118346,
+      "imageDimensions": [
+        1128,
+        1329
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Herbs & Mustard",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p7-1-Spectra_Herbs___Mustard-cae477a7ceee442485840eaede5d16ed.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 7,
+      "pages": [
+        7
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        778.0,
+        252.8,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 308,
+          "bbox": [
+            113.2,
+            56.5,
+            1138.7,
+            750.8
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 308,
+      "assignedImageBbox": [
+        113.2,
+        56.5,
+        1138.7,
+        750.8
+      ],
+      "assignedCropBbox": [
+        113.2,
+        582.0,
+        282.0,
+        750.8
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 115443,
+      "imageDimensions": [
+        423,
+        423
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Peanut",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p7-2-Spectra_Peanut-a58dee6a85504a7ea64426d06f392992.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 7,
+      "pages": [
+        7
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        282.0,
+        778.0,
+        383.2,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 308,
+          "bbox": [
+            113.2,
+            56.5,
+            1138.7,
+            750.8
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 308,
+      "assignedImageBbox": [
+        113.2,
+        56.5,
+        1138.7,
+        750.8
+      ],
+      "assignedCropBbox": [
+        282.0,
+        582.2,
+        450.5,
+        750.8
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 158775,
+      "imageDimensions": [
+        423,
+        422
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Berry",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p8-1-Spectra_Berry-5d05cc0f95134628930ac8f8dc343aa9.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 8,
+      "pages": [
+        8
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        231.2,
+        749.6,
+        324.6,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 312,
+          "bbox": [
+            56.4,
+            113.1,
+            597.7,
+            807.6
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 312,
+      "assignedImageBbox": [
+        56.4,
+        113.1,
+        597.7,
+        807.6
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 117595,
+      "imageDimensions": [
+        1128,
+        1447
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Messa Peanut & Spectra Peanut",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p9-1-Messa_Peanut___Spectra_Peanut-5ab414947d74411095efa4e8bed47270.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 9,
+      "pages": [
+        9
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 43,
+      "eligibleImagePlacementCount": 43,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        724.0,
+        225.6,
+        755.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 443,
+          "bbox": [
+            56.5,
+            113.2,
+            541.0,
+            694.1
+          ],
+          "verticalGap": 30.0
+        }
+      ],
+      "assignedImageXref": 443,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        541.0,
+        694.1
+      ],
+      "assignedCropBbox": [
+        56.5,
+        494.9,
+        255.7,
+        694.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 50267,
+      "imageDimensions": [
+        499,
+        499
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Peanut",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p9-2-Spectra_Peanut-441bcec2772a4827bc9d50ec9361df6b.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 9,
+      "pages": [
+        9
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 43,
+      "eligibleImagePlacementCount": 43,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        255.7,
+        724.0,
+        356.9,
+        755.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 443,
+          "bbox": [
+            56.5,
+            113.2,
+            541.0,
+            694.1
+          ],
+          "verticalGap": 30.0
+        }
+      ],
+      "assignedImageXref": 443,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        541.0,
+        694.1
+      ],
+      "assignedCropBbox": [
+        255.7,
+        495.1,
+        454.7,
+        694.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 92237,
+      "imageDimensions": [
+        498,
+        499
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Queen Mint",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p10-1-Queen_Mint-a8b83cb8e269462ca0676a8f30452726.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 10,
+      "pages": [
+        10
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        84.9,
+        698.6,
+        172.7,
+        729.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 498,
+          "bbox": [
+            56.5,
+            84.9,
+            1138.7,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 498,
+      "assignedImageBbox": [
+        56.5,
+        84.9,
+        1138.7,
+        807.5
+      ],
+      "assignedCropBbox": [
+        56.5,
+        566.4,
+        180.7,
+        690.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 30342,
+      "imageDimensions": [
+        311,
+        311
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Garden Geo",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p10-2-Garden_Geo-80f7bb28d7e342c0b369bb91ed4c644f.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 10,
+      "pages": [
+        10
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        84.9,
+        749.6,
+        175.4,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 498,
+          "bbox": [
+            56.5,
+            84.9,
+            1138.7,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 498,
+      "assignedImageBbox": [
+        56.5,
+        84.9,
+        1138.7,
+        807.5
+      ],
+      "assignedCropBbox": [
+        56.5,
+        614.7,
+        183.4,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 46642,
+      "imageDimensions": [
+        318,
+        319
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Garden Geo",
+      "category": null,
+      "collection": null,
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p11-1-Garden_Geo-eb8dcf898d1042b88c0ca9a358828630.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 11,
+      "pages": [
+        11
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        695.7,
+        147.2,
+        726.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 502,
+          "bbox": [
+            56.6,
+            56.6,
+            512.6,
+            665.7
+          ],
+          "verticalGap": 30.0
+        }
+      ],
+      "assignedImageXref": 502,
+      "assignedImageBbox": [
+        56.6,
+        56.6,
+        512.6,
+        665.7
+      ],
+      "assignedCropBbox": [
+        56.6,
+        545.7,
+        176.5,
+        665.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 81557,
+      "imageDimensions": [
+        301,
+        301
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Queen Mint",
+      "category": null,
+      "collection": null,
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p11-2-Queen_Mint-4f49d6ac3f064ff8b7f2aea3a2d3aa6b.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 11,
+      "pages": [
+        11
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        176.5,
+        695.7,
+        264.3,
+        726.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 502,
+          "bbox": [
+            56.6,
+            56.6,
+            512.6,
+            665.7
+          ],
+          "verticalGap": 30.0
+        }
+      ],
+      "assignedImageXref": 502,
+      "assignedImageBbox": [
+        56.6,
+        56.6,
+        512.6,
+        665.7
+      ],
+      "assignedCropBbox": [
+        176.5,
+        545.8,
+        296.4,
+        665.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 99020,
+      "imageDimensions": [
+        300,
+        301
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Garden Loop",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p12-1-Garden_Loop-7a5c78c574814622ac4abb9d74fa33bf.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 12,
+      "pages": [
+        12
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        721.3,
+        206.1,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 530,
+          "bbox": [
+            84.9,
+            84.9,
+            1195.4,
+            779.2
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 530,
+      "assignedImageBbox": [
+        84.9,
+        84.9,
+        1195.4,
+        779.2
+      ],
+      "assignedCropBbox": [
+        84.9,
+        563.6,
+        234.5,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 89781,
+      "imageDimensions": [
+        375,
+        375
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "River Grey",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p12-2-River_Grey-103696f4d8be4992abe9030c5d1d1931.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 12,
+      "pages": [
+        12
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        234.5,
+        721.3,
+        322.3,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 530,
+          "bbox": [
+            84.9,
+            84.9,
+            1195.4,
+            779.2
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 530,
+      "assignedImageBbox": [
+        84.9,
+        84.9,
+        1195.4,
+        779.2
+      ],
+      "assignedCropBbox": [
+        234.5,
+        592.1,
+        355.7,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 86629,
+      "imageDimensions": [
+        304,
+        304
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Garden Loop",
+      "category": null,
+      "collection": null,
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p13-1-Garden_Loop-77228bcee49642268a2df956ab4bd1b6.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 13,
+      "pages": [
+        13
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        86.8,
+        177.8,
+        118.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 534,
+          "bbox": [
+            84.8,
+            165.8,
+            541.1,
+            779.0
+          ],
+          "verticalGap": 47.8
+        }
+      ],
+      "assignedImageXref": 534,
+      "assignedImageBbox": [
+        84.8,
+        165.8,
+        541.1,
+        779.0
+      ],
+      "assignedCropBbox": [
+        84.8,
+        654.2,
+        209.6,
+        779.0
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 65851,
+      "imageDimensions": [
+        313,
+        313
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "River Grey",
+      "category": null,
+      "collection": null,
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p13-2-River_Grey-05aebdae456245d49e4701c169e59f86.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 13,
+      "pages": [
+        13
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        209.6,
+        86.8,
+        297.4,
+        118.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 534,
+          "bbox": [
+            84.8,
+            165.8,
+            541.1,
+            779.0
+          ],
+          "verticalGap": 47.8
+        }
+      ],
+      "assignedImageXref": 534,
+      "assignedImageBbox": [
+        84.8,
+        165.8,
+        541.1,
+        779.0
+      ],
+      "assignedCropBbox": [
+        209.6,
+        654.4,
+        334.2,
+        779.0
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 68012,
+      "imageDimensions": [
+        312,
+        312
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Soil Petals",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p14-1-Soil_Petals-3dcae12c4c184f21a12fcf23f41a61d3.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 14,
+      "pages": [
+        14
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        172.8,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 561,
+          "bbox": [
+            56.5,
+            84.9,
+            1110.4,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 561,
+      "assignedImageBbox": [
+        56.5,
+        84.9,
+        1110.4,
+        807.5
+      ],
+      "assignedCropBbox": [
+        56.5,
+        596.8,
+        201.3,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 77055,
+      "imageDimensions": [
+        363,
+        363
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p14-2-Burnt_Brick-d0f3e2ff20334049bea843c491334333.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 14,
+      "pages": [
+        14
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        201.3,
+        749.6,
+        289.1,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 561,
+          "bbox": [
+            56.5,
+            84.9,
+            1110.4,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 561,
+      "assignedImageBbox": [
+        56.5,
+        84.9,
+        1110.4,
+        807.5
+      ],
+      "assignedCropBbox": [
+        201.3,
+        625.4,
+        317.5,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 75949,
+      "imageDimensions": [
+        291,
+        292
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Soil Petals",
+      "category": null,
+      "collection": null,
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p15-1-Soil_Petals-ef7985c3c62144f895ed30fe2d8d3557.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 15,
+      "pages": [
+        15
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 6,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        1161.3,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 572,
+          "bbox": [
+            56.6,
+            165.9,
+            541.0,
+            750.7
+          ],
+          "verticalGap": 27.3
+        },
+        {
+          "imageIndex": 30,
+          "xref": 583,
+          "bbox": [
+            1061.8,
+            759.0,
+            1110.3,
+            807.4
+          ],
+          "verticalGap": 0
+        },
+        {
+          "imageIndex": 31,
+          "xref": 585,
+          "bbox": [
+            852.3,
+            594.7,
+            894.9,
+            637.3
+          ],
+          "verticalGap": 140.7
+        },
+        {
+          "imageIndex": 32,
+          "xref": 588,
+          "bbox": [
+            795.6,
+            594.7,
+            838.2,
+            637.3
+          ],
+          "verticalGap": 140.7
+        },
+        {
+          "imageIndex": 33,
+          "xref": 590,
+          "bbox": [
+            739.3,
+            594.7,
+            781.9,
+            637.3
+          ],
+          "verticalGap": 140.7
+        },
+        {
+          "imageIndex": 34,
+          "xref": 592,
+          "bbox": [
+            682.6,
+            594.7,
+            725.2,
+            637.3
+          ],
+          "verticalGap": 140.7
+        }
+      ],
+      "assignedImageXref": 583,
+      "assignedImageBbox": [
+        1061.8,
+        759.0,
+        1110.3,
+        807.4
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 14925,
+      "imageDimensions": [
+        147,
+        148
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": null,
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p15-2-Burnt_Brick-e53d8c70ecdd492cb864d45870ce10f9.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 15,
+      "pages": [
+        15
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        173.0,
+        778.0,
+        260.8,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 572,
+          "bbox": [
+            56.6,
+            165.9,
+            541.0,
+            750.7
+          ],
+          "verticalGap": 27.3
+        }
+      ],
+      "assignedImageXref": 572,
+      "assignedImageBbox": [
+        56.6,
+        165.9,
+        541.0,
+        750.7
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 137022,
+      "imageDimensions": [
+        1009,
+        1218
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Soil Heritage",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p16-1-Soil_Heritage-fe76be51881f409f966f0b3f644e19f5.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 16,
+      "pages": [
+        16
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        654.3,
+        778.0,
+        746.7,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 602,
+          "bbox": [
+            56.6,
+            56.6,
+            1110.3,
+            722.4
+          ],
+          "verticalGap": 55.6
+        }
+      ],
+      "assignedImageXref": 602,
+      "assignedImageBbox": [
+        56.6,
+        56.6,
+        1110.3,
+        722.4
+      ],
+      "assignedCropBbox": [
+        654.3,
+        604.0,
+        772.7,
+        722.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 76897,
+      "imageDimensions": [
+        297,
+        297
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Terra Red",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p16-2-Terra_Red-431d1c383b634793b37e9df834a10c93.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 16,
+      "pages": [
+        16
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        772.7,
+        778.0,
+        860.5,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 602,
+          "bbox": [
+            56.6,
+            56.6,
+            1110.3,
+            722.4
+          ],
+          "verticalGap": 55.6
+        }
+      ],
+      "assignedImageXref": 602,
+      "assignedImageBbox": [
+        56.6,
+        56.6,
+        1110.3,
+        722.4
+      ],
+      "assignedCropBbox": [
+        772.7,
+        604.0,
+        891.0,
+        722.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 77067,
+      "imageDimensions": [
+        297,
+        297
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Soil Heritage",
+      "category": null,
+      "collection": null,
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p17-1-Soil_Heritage-f3c5238f5e534013a913e8aff61abab5.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 17,
+      "pages": [
+        17
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        149.1,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 606,
+          "bbox": [
+            56.6,
+            56.6,
+            541.1,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 606,
+      "assignedImageBbox": [
+        56.6,
+        56.6,
+        541.1,
+        750.9
+      ],
+      "assignedCropBbox": [
+        56.6,
+        632.4,
+        175.1,
+        750.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 41697,
+      "imageDimensions": [
+        297,
+        298
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Terra Red",
+      "category": null,
+      "collection": null,
+      "size": "598x598mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p17-2-Terra_Red-cde99ead3b184f419be38be329130225.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 17,
+      "pages": [
+        17
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 44,
+      "eligibleImagePlacementCount": 44,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        175.1,
+        778.0,
+        262.9,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 606,
+          "bbox": [
+            56.6,
+            56.6,
+            541.1,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 606,
+      "assignedImageBbox": [
+        56.6,
+        56.6,
+        541.1,
+        750.9
+      ],
+      "assignedCropBbox": [
+        175.1,
+        632.5,
+        293.4,
+        750.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 63490,
+      "imageDimensions": [
+        297,
+        297
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Folk Diamond",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p18-1-Folk_Diamond-d7f5c0a8e06f4a4194f7aa336a6ea704.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 18,
+      "pages": [
+        18
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        778.0,
+        180.1,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 632,
+          "bbox": [
+            85.0,
+            85.0,
+            1138.5,
+            750.7
+          ],
+          "verticalGap": 27.3
+        }
+      ],
+      "assignedImageXref": 632,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1138.5,
+        750.7
+      ],
+      "assignedCropBbox": [
+        85.0,
+        631.2,
+        204.5,
+        750.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 28758,
+      "imageDimensions": [
+        300,
+        300
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Salt & Berry",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p18-2-Spectra_Salt___Berry-0612d3a1fa5a443290859d537a821cd5.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 18,
+      "pages": [
+        18
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        204.5,
+        778.0,
+        323.1,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 632,
+          "bbox": [
+            85.0,
+            85.0,
+            1138.5,
+            750.7
+          ],
+          "verticalGap": 27.3
+        }
+      ],
+      "assignedImageXref": 632,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1138.5,
+        750.7
+      ],
+      "assignedCropBbox": [
+        204.5,
+        624.1,
+        331.1,
+        750.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 33267,
+      "imageDimensions": [
+        317,
+        317
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Folk Stars",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p20-1-Folk_Stars-d581951bc52f431ea6660ab27fc3b07e.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 20,
+      "pages": [
+        20
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        1161.3,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 701,
+          "bbox": [
+            56.4,
+            56.5,
+            1138.8,
+            722.5
+          ],
+          "verticalGap": 55.4
+        }
+      ],
+      "assignedImageXref": 701,
+      "assignedImageBbox": [
+        56.4,
+        56.5,
+        1138.8,
+        722.5
+      ],
+      "assignedCropBbox": [
+        56.4,
+        606.0,
+        172.9,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 21388,
+      "imageDimensions": [
+        293,
+        292
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Herbs",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p20-2-Spectra_Herbs-e5123a094c1c45b0be2b0119d85d0539.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 20,
+      "pages": [
+        20
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        172.9,
+        778.0,
+        268.8,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 701,
+          "bbox": [
+            56.4,
+            56.5,
+            1138.8,
+            722.5
+          ],
+          "verticalGap": 55.4
+        }
+      ],
+      "assignedImageXref": 701,
+      "assignedImageBbox": [
+        56.4,
+        56.5,
+        1138.8,
+        722.5
+      ],
+      "assignedCropBbox": [
+        172.9,
+        606.3,
+        289.1,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 24487,
+      "imageDimensions": [
+        291,
+        292
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Folk Stars",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p21-1-Folk_Stars-3c524af85dd8487dba8a3cdfebbb3843.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 21,
+      "pages": [
+        21
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 45,
+      "eligibleImagePlacementCount": 45,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        749.6,
+        144.5,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 716,
+          "bbox": [
+            56.5,
+            165.6,
+            473.6,
+            722.6
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 716,
+      "assignedImageBbox": [
+        56.5,
+        165.6,
+        473.6,
+        722.6
+      ],
+      "assignedCropBbox": [
+        56.5,
+        606.2,
+        172.9,
+        722.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 138594,
+      "imageDimensions": [
+        292,
+        292
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Herbs",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p21-2-Spectra_Herbs-a873f92791004f08ab6155c207df9cba.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 21,
+      "pages": [
+        21
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 45,
+      "eligibleImagePlacementCount": 45,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        172.9,
+        749.6,
+        268.8,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 716,
+          "bbox": [
+            56.5,
+            165.6,
+            473.6,
+            722.6
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 716,
+      "assignedImageBbox": [
+        56.5,
+        165.6,
+        473.6,
+        722.6
+      ],
+      "assignedCropBbox": [
+        172.9,
+        606.4,
+        289.1,
+        722.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 230126,
+      "imageDimensions": [
+        291,
+        292
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Motif Chilli",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p22-1-Motif_Chilli-234ab945464a4ccdb02cc72c567157c1.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 22,
+      "pages": [
+        22
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        721.3,
+        172.8,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 758,
+          "bbox": [
+            56.7,
+            85.0,
+            1138.5,
+            779.2
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 758,
+      "assignedImageBbox": [
+        56.7,
+        85.0,
+        1138.5,
+        779.2
+      ],
+      "assignedCropBbox": [
+        56.7,
+        567.0,
+        202.9,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 80355,
+      "imageDimensions": [
+        367,
+        367
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Chilli & Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p22-2-Spectra_Chilli___Mushroom-1f621cc9a1b2471fa1e618cde0189530.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 22,
+      "pages": [
+        22
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        202.9,
+        721.3,
+        349.2,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 758,
+          "bbox": [
+            56.7,
+            85.0,
+            1138.5,
+            779.2
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 758,
+      "assignedImageBbox": [
+        56.7,
+        85.0,
+        1138.5,
+        779.2
+      ],
+      "assignedCropBbox": [
+        202.9,
+        538.0,
+        378.1,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 194282,
+      "imageDimensions": [
+        439,
+        439
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p22-3-Spectra_Mushroom-d1abd454416e4f108fdcfcbcff283727.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 22,
+      "pages": [
+        22
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        378.1,
+        721.3,
+        494.0,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 758,
+          "bbox": [
+            56.7,
+            85.0,
+            1138.5,
+            779.2
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 758,
+      "assignedImageBbox": [
+        56.7,
+        85.0,
+        1138.5,
+        779.2
+      ],
+      "assignedCropBbox": [
+        378.1,
+        538.0,
+        553.4,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 230815,
+      "imageDimensions": [
+        439,
+        439
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Motif Chilli",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p23-1-Motif_Chilli-fa81c8c24c664ff7b4a1e014920570df.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 23,
+      "pages": [
+        23
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 40,
+      "eligibleImagePlacementCount": 40,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        86.8,
+        172.8,
+        118.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 39,
+          "xref": 802,
+          "bbox": [
+            84.8,
+            165.8,
+            541.0,
+            779.1
+          ],
+          "verticalGap": 47.8
+        }
+      ],
+      "assignedImageXref": 802,
+      "assignedImageBbox": [
+        84.8,
+        165.8,
+        541.0,
+        779.1
+      ],
+      "assignedCropBbox": [
+        84.8,
+        661.0,
+        202.9,
+        779.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 53778,
+      "imageDimensions": [
+        297,
+        296
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Chilli",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p23-2-Spectra_Chilli-6ee3f3fb290d4709a9087312de49f8c1.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 23,
+      "pages": [
+        23
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 40,
+      "eligibleImagePlacementCount": 40,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        202.9,
+        86.8,
+        295.4,
+        118.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 39,
+          "xref": 802,
+          "bbox": [
+            84.8,
+            165.8,
+            541.0,
+            779.1
+          ],
+          "verticalGap": 47.8
+        }
+      ],
+      "assignedImageXref": 802,
+      "assignedImageBbox": [
+        84.8,
+        165.8,
+        541.0,
+        779.1
+      ],
+      "assignedCropBbox": [
+        202.9,
+        661.3,
+        320.8,
+        779.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 57214,
+      "imageDimensions": [
+        295,
+        295
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Chilli",
+      "category": null,
+      "collection": null,
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p24-1-Spectra_Chilli-8e1d0918fa88434bb667875b33c8657e.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 24,
+      "pages": [
+        24
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 8,
+      "productTextBbox": [
+        680.3,
+        431.0,
+        772.9,
+        462.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 42,
+          "xref": 856,
+          "bbox": [
+            682.7,
+            523.9,
+            739.3,
+            580.5
+          ],
+          "verticalGap": 61.7
+        },
+        {
+          "imageIndex": 43,
+          "xref": 856,
+          "bbox": [
+            739.4,
+            523.9,
+            796.0,
+            580.5
+          ],
+          "verticalGap": 61.7
+        },
+        {
+          "imageIndex": 45,
+          "xref": 856,
+          "bbox": [
+            682.7,
+            580.6,
+            739.3,
+            637.2
+          ],
+          "verticalGap": 118.4
+        },
+        {
+          "imageIndex": 46,
+          "xref": 856,
+          "bbox": [
+            739.4,
+            580.6,
+            796.0,
+            637.2
+          ],
+          "verticalGap": 118.4
+        },
+        {
+          "imageIndex": 48,
+          "xref": 856,
+          "bbox": [
+            739.4,
+            637.3,
+            796.0,
+            693.9
+          ],
+          "verticalGap": 175.1
+        },
+        {
+          "imageIndex": 50,
+          "xref": 858,
+          "bbox": [
+            670.9,
+            625.5,
+            751.1,
+            705.7
+          ],
+          "verticalGap": 163.3
+        },
+        {
+          "imageIndex": 51,
+          "xref": 856,
+          "bbox": [
+            682.7,
+            637.3,
+            739.3,
+            693.9
+          ],
+          "verticalGap": 175.1
+        },
+        {
+          "imageIndex": 52,
+          "xref": 860,
+          "bbox": [
+            682.5,
+            56.5,
+            1110.3,
+            403.7
+          ],
+          "verticalGap": 27.3
+        }
+      ],
+      "assignedImageXref": 860,
+      "assignedImageBbox": [
+        682.5,
+        56.5,
+        1110.3,
+        403.7
+      ],
+      "assignedCropBbox": [
+        682.5,
+        288.0,
+        798.2,
+        403.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 43645,
+      "imageDimensions": [
+        290,
+        291
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": null,
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p24-2-Spectra_Mushroom-7a4c908a2d0847f5831da327fa7b2332.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 24,
+      "pages": [
+        24
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 5,
+      "productTextBbox": [
+        798.2,
+        431.0,
+        914.0,
+        462.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 40,
+          "xref": 852,
+          "bbox": [
+            895.1,
+            559.6,
+            937.8,
+            602.3
+          ],
+          "verticalGap": 97.4
+        },
+        {
+          "imageIndex": 44,
+          "xref": 856,
+          "bbox": [
+            796.1,
+            523.9,
+            852.7,
+            580.5
+          ],
+          "verticalGap": 61.7
+        },
+        {
+          "imageIndex": 47,
+          "xref": 856,
+          "bbox": [
+            796.1,
+            580.6,
+            852.7,
+            637.2
+          ],
+          "verticalGap": 118.4
+        },
+        {
+          "imageIndex": 49,
+          "xref": 856,
+          "bbox": [
+            796.1,
+            637.3,
+            852.7,
+            693.9
+          ],
+          "verticalGap": 175.1
+        },
+        {
+          "imageIndex": 52,
+          "xref": 860,
+          "bbox": [
+            682.5,
+            56.5,
+            1110.3,
+            403.7
+          ],
+          "verticalGap": 27.3
+        }
+      ],
+      "assignedImageXref": 860,
+      "assignedImageBbox": [
+        682.5,
+        56.5,
+        1110.3,
+        403.7
+      ],
+      "assignedCropBbox": [
+        798.2,
+        279.9,
+        922.0,
+        403.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 48137,
+      "imageDimensions": [
+        311,
+        311
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Misty Slate & Rusty Slate",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt Carving",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p25-1-Misty_Slate___Rusty_Slate-69b38763dd754aa5aafa2b9aab8b4a5d.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 25,
+      "pages": [
+        25
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        654.3,
+        778.0,
+        790.4,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 864,
+          "bbox": [
+            56.7,
+            56.4,
+            1110.2,
+            722.5
+          ],
+          "verticalGap": 55.5
+        }
+      ],
+      "assignedImageXref": 864,
+      "assignedImageBbox": [
+        56.7,
+        56.4,
+        1110.2,
+        722.5
+      ],
+      "assignedCropBbox": [
+        654.3,
+        557.2,
+        819.6,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 206518,
+      "imageDimensions": [
+        414,
+        414
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Misty Brown",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt Carving",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p26-1-Misty_Brown-af1787e21b9841e39b35f7e7e5f21b93.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 26,
+      "pages": [
+        26
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        86.8,
+        176.7,
+        118.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 875,
+          "bbox": [
+            84.9,
+            165.9,
+            541.2,
+            747.9
+          ],
+          "verticalGap": 47.9
+        }
+      ],
+      "assignedImageXref": 875,
+      "assignedImageBbox": [
+        84.9,
+        165.9,
+        541.2,
+        747.9
+      ],
+      "assignedCropBbox": [
+        84.9,
+        623.4,
+        209.4,
+        747.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 154256,
+      "imageDimensions": [
+        312,
+        312
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Tango",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "58x250mm",
+      "surface": "Glossy",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p26-2-Spectra_Tango-16bf9c6dc96b4dc4a2f84cd784059fa2.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 26,
+      "pages": [
+        26
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        209.4,
+        86.8,
+        307.4,
+        118.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 875,
+          "bbox": [
+            84.9,
+            165.9,
+            541.2,
+            747.9
+          ],
+          "verticalGap": 47.9
+        }
+      ],
+      "assignedImageXref": 875,
+      "assignedImageBbox": [
+        84.9,
+        165.9,
+        541.2,
+        747.9
+      ],
+      "assignedCropBbox": [
+        209.4,
+        199.5,
+        336.7,
+        747.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 600235,
+      "imageDimensions": [
+        319,
+        1372
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rusty Brown",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt Carving",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p26-3-Rusty_Brown-68476a9d49a843e88b3f1446f7289503.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 26,
+      "pages": [
+        26
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        336.7,
+        86.8,
+        428.4,
+        118.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 875,
+          "bbox": [
+            84.9,
+            165.9,
+            541.2,
+            747.9
+          ],
+          "verticalGap": 47.9
+        }
+      ],
+      "assignedImageXref": 875,
+      "assignedImageBbox": [
+        84.9,
+        165.9,
+        541.2,
+        747.9
+      ],
+      "assignedCropBbox": [
+        336.7,
+        620.7,
+        463.9,
+        747.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 143102,
+      "imageDimensions": [
+        319,
+        319
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rustone Beige Decor & Beige Lit",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt With Granula",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p27-1-Rustone_Beige_Decor___Beige_Lit-c6822d807a3c43c79c05a9f7d0a8e9ad.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 27,
+      "pages": [
+        27
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        253.7,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1004,
+          "bbox": [
+            56.7,
+            84.8,
+            1110.4,
+            807.3
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1004,
+      "assignedImageBbox": [
+        56.7,
+        84.8,
+        1110.4,
+        807.3
+      ],
+      "assignedCropBbox": [
+        56.7,
+        518.8,
+        279.5,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 467829,
+      "imageDimensions": [
+        558,
+        559
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mustard",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "58x250mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p27-2-Spectra_Mustard-b58ac97bd2b34e1092d34aab7e448cc8.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 27,
+      "pages": [
+        27
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        279.5,
+        749.6,
+        385.2,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1004,
+          "bbox": [
+            56.7,
+            84.8,
+            1110.4,
+            807.3
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1004,
+      "assignedImageBbox": [
+        56.7,
+        84.8,
+        1110.4,
+        807.3
+      ],
+      "assignedCropBbox": [
+        279.5,
+        150.6,
+        416.7,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 659553,
+      "imageDimensions": [
+        344,
+        1479
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rustone Beige Mid",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p27-3-Rustone_Beige_Mid-37976931a20b4934859ad47d6d7f01ea.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 27,
+      "pages": [
+        27
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        654.3,
+        749.6,
+        768.6,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1004,
+          "bbox": [
+            56.7,
+            84.8,
+            1110.4,
+            807.3
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1004,
+      "assignedImageBbox": [
+        56.7,
+        84.8,
+        1110.4,
+        807.3
+      ],
+      "assignedCropBbox": [
+        654.3,
+        547.1,
+        848.8,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 410581,
+      "imageDimensions": [
+        487,
+        488
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rustone Beige Decor & Beige Lit",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt With Granula",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p28-1-Rustone_Beige_Decor___Beige_Lit-d7810276c07b402f95758f53558c9050.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 28,
+      "pages": [
+        28
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 42,
+      "eligibleImagePlacementCount": 42,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        695.7,
+        225.4,
+        726.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1008,
+          "bbox": [
+            56.4,
+            56.6,
+            512.7,
+            665.7
+          ],
+          "verticalGap": 30.0
+        }
+      ],
+      "assignedImageXref": 1008,
+      "assignedImageBbox": [
+        56.4,
+        56.6,
+        512.7,
+        665.7
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 120981,
+      "imageDimensions": [
+        951,
+        1269
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rustone Kota Decor",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": null,
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p29-1-Rustone_Kota_Decor-e327e53df7e5445db12a576575898473.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 4,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        721.3,
+        232.8,
+        741.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1097,
+          "bbox": [
+            85.0,
+            85.0,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1097,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        85.0,
+        535.3,
+        263.0,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 274592,
+      "imageDimensions": [
+        446,
+        446
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rustone Kota Decor",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt With Granula",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p29-2-Rustone_Kota_Decor-3d797b66cbe84c80a8d3f344d103a7d7.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 4,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        721.3,
+        232.8,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1097,
+          "bbox": [
+            85.0,
+            85.0,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1097,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        85.0,
+        535.3,
+        263.0,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 274592,
+      "imageDimensions": [
+        446,
+        446
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "58x250mm",
+      "surface": "Glossy",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p29-3-Spectra_Mushroom-af467d3bcbe14a038d2d6dc4f915ae12.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 4,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        263.0,
+        721.3,
+        378.8,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1097,
+          "bbox": [
+            85.0,
+            85.0,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1097,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        263.0,
+        87.7,
+        408.1,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 816008,
+      "imageDimensions": [
+        364,
+        1565
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "58x250mm",
+      "surface": null,
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p29-4-Spectra_Mushroom-739c346d322f450587d20d09505af8a2.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 4,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        263.0,
+        721.3,
+        378.8,
+        741.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1097,
+          "bbox": [
+            85.0,
+            85.0,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1097,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        263.0,
+        87.7,
+        408.1,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 816008,
+      "imageDimensions": [
+        364,
+        1565
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rustone Kota Dark & Kota Mid",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": null,
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p29-5-Rustone_Kota_Dark___Kota_Mid-7040c9cd3e1d4384841a444aeb11037d.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 4,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        408.1,
+        721.3,
+        568.8,
+        741.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1097,
+          "bbox": [
+            85.0,
+            85.0,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1097,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        408.1,
+        544.6,
+        576.8,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 140354,
+      "imageDimensions": [
+        423,
+        423
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Rustone Kota Dark & Kota Mid",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p29-6-Rustone_Kota_Dark___Kota_Mid-5d15290ea8fa4319890b64b7a8686b55.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 4,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        408.1,
+        721.3,
+        568.8,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1097,
+          "bbox": [
+            85.0,
+            85.0,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1097,
+      "assignedImageBbox": [
+        85.0,
+        85.0,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        408.1,
+        544.6,
+        576.8,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 140354,
+      "imageDimensions": [
+        423,
+        423
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Morta Silver & Slate Decor",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p31-1-Morta_Silver___Slate_Decor-2a2a3b7ac4604600b51b598a8a4195f5.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 31,
+      "pages": [
+        31
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        778.0,
+        229.3,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1286,
+          "bbox": [
+            85.0,
+            84.8,
+            1138.5,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1286,
+      "assignedImageBbox": [
+        85.0,
+        84.8,
+        1138.5,
+        750.9
+      ],
+      "assignedCropBbox": [
+        85.0,
+        576.5,
+        259.4,
+        750.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 74534,
+      "imageDimensions": [
+        437,
+        437
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mustard",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "58x250mm",
+      "surface": "Glossy",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p31-2-Spectra_Mustard-e79a86e56cdc4bf59e4b6b2de8e1cf46.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 31,
+      "pages": [
+        31
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        259.4,
+        778.0,
+        365.0,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1286,
+          "bbox": [
+            85.0,
+            84.8,
+            1138.5,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1286,
+      "assignedImageBbox": [
+        85.0,
+        84.8,
+        1138.5,
+        750.9
+      ],
+      "assignedCropBbox": [
+        259.4,
+        159.8,
+        396.5,
+        750.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 544728,
+      "imageDimensions": [
+        344,
+        1479
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Morta Slate",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p31-3-Morta_Slate-cef2b6b32615497ab29d3f5f468cd70e.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 31,
+      "pages": [
+        31
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        396.5,
+        778.0,
+        484.3,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1286,
+          "bbox": [
+            85.0,
+            84.8,
+            1138.5,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1286,
+      "assignedImageBbox": [
+        85.0,
+        84.8,
+        1138.5,
+        750.9
+      ],
+      "assignedCropBbox": [
+        396.5,
+        576.5,
+        570.9,
+        750.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 160226,
+      "imageDimensions": [
+        437,
+        437
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Morta Silver",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p32-1-Morta_Silver-ae640cfac5154bee98b8060919d6bdd7.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 32,
+      "pages": [
+        32
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        144.5,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1290,
+          "bbox": [
+            56.5,
+            170.0,
+            541.0,
+            750.8
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 1290,
+      "assignedImageBbox": [
+        56.5,
+        170.0,
+        541.0,
+        750.8
+      ],
+      "assignedCropBbox": [
+        56.5,
+        634.7,
+        172.6,
+        750.8
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 47406,
+      "imageDimensions": [
+        291,
+        291
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Berry",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "58x250mm",
+      "surface": "Glossy",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p32-2-Spectra_Berry-4e982743f0844adb87958e7aac83005a.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 32,
+      "pages": [
+        32
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        172.6,
+        778.0,
+        266.0,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1290,
+          "bbox": [
+            56.5,
+            170.0,
+            541.0,
+            750.8
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 1290,
+      "assignedImageBbox": [
+        56.5,
+        170.0,
+        541.0,
+        750.8
+      ],
+      "assignedCropBbox": [
+        172.6,
+        226.0,
+        294.3,
+        750.8
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 333442,
+      "imageDimensions": [
+        305,
+        1313
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Morta Slate",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p32-3-Morta_Slate-e458716865f046efa807078197119962.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 32,
+      "pages": [
+        32
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        436.7,
+        778.0,
+        524.5,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1290,
+          "bbox": [
+            56.5,
+            170.0,
+            541.0,
+            750.8
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 1290,
+      "assignedImageBbox": [
+        56.5,
+        170.0,
+        541.0,
+        750.8
+      ],
+      "assignedCropBbox": [
+        436.7,
+        646.4,
+        541.0,
+        750.8
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 50721,
+      "imageDimensions": [
+        262,
+        262
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Morta Khakhi & Khakhi Decor",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p33-1-Morta_Khakhi___Khakhi_Decor-8a0ffdda64604daf8a87dcbcb1df953f.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 33,
+      "pages": [
+        33
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        215.5,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1412,
+          "bbox": [
+            56.7,
+            56.4,
+            1110.2,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1412,
+      "assignedImageBbox": [
+        56.7,
+        56.4,
+        1110.2,
+        750.9
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 285557,
+      "imageDimensions": [
+        2195,
+        1447
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Morta Terra & Terra Decor",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p34-1-Morta_Terra___Terra_Decor-67815538a98447a0aff19598069945cb.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 34,
+      "pages": [
+        34
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        664.6,
+        227.9,
+        695.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1416,
+          "bbox": [
+            85.0,
+            56.5,
+            541.0,
+            637.4
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 1416,
+      "assignedImageBbox": [
+        85.0,
+        56.5,
+        541.0,
+        637.4
+      ],
+      "assignedCropBbox": [
+        85.0,
+        466.0,
+        256.4,
+        637.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 409485,
+      "imageDimensions": [
+        430,
+        430
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Tango",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "58x250mm",
+      "surface": "Glossy",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p34-2-Spectra_Tango-9235ca2b56fe49289707fa679ff94f95.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 34,
+      "pages": [
+        34
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 62,
+      "eligibleImagePlacementCount": 62,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        256.4,
+        664.6,
+        354.4,
+        695.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1416,
+          "bbox": [
+            85.0,
+            56.5,
+            541.0,
+            637.4
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 1416,
+      "assignedImageBbox": [
+        85.0,
+        56.5,
+        541.0,
+        637.4
+      ],
+      "assignedCropBbox": [
+        274.7,
+        56.5,
+        409.5,
+        637.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 794432,
+      "imageDimensions": [
+        338,
+        1453
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Mint Decor 1 & Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p35-1-Neo_Mint_Decor_1___Decor_2-d4d72f53afe94139b93aea920ee1f252.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 35,
+      "pages": [
+        35
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        209.2,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1533,
+          "bbox": [
+            56.7,
+            56.6,
+            1138.5,
+            722.5
+          ],
+          "verticalGap": 55.5
+        }
+      ],
+      "assignedImageXref": 1533,
+      "assignedImageBbox": [
+        56.7,
+        56.6,
+        1138.5,
+        722.5
+      ],
+      "assignedCropBbox": [
+        56.7,
+        539.9,
+        239.3,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 242667,
+      "imageDimensions": [
+        458,
+        458
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Mint & Chalk",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p35-2-Neo_Mint___Chalk-d9c7f7ab47e744b68de42643a99d5234.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 35,
+      "pages": [
+        35
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        239.3,
+        778.0,
+        349.5,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1533,
+          "bbox": [
+            56.7,
+            56.6,
+            1138.5,
+            722.5
+          ],
+          "verticalGap": 55.5
+        }
+      ],
+      "assignedImageXref": 1533,
+      "assignedImageBbox": [
+        56.7,
+        56.6,
+        1138.5,
+        722.5
+      ],
+      "assignedCropBbox": [
+        239.3,
+        582.4,
+        379.4,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 97087,
+      "imageDimensions": [
+        351,
+        351
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Mint",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p35-3-Neo_Mint-47a551972b5241d794abe835854737db.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 35,
+      "pages": [
+        35
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        379.4,
+        778.0,
+        467.2,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1533,
+          "bbox": [
+            56.7,
+            56.6,
+            1138.5,
+            722.5
+          ],
+          "verticalGap": 55.5
+        }
+      ],
+      "assignedImageXref": 1533,
+      "assignedImageBbox": [
+        56.7,
+        56.6,
+        1138.5,
+        722.5
+      ],
+      "assignedCropBbox": [
+        379.4,
+        539.9,
+        561.9,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 149995,
+      "imageDimensions": [
+        457,
+        458
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Mint Decor 1 & Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p36-1-Neo_Mint_Decor_1___Decor_2-9fbadec3d54742449cccbaf1e28f27e1.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 36,
+      "pages": [
+        36
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 52,
+      "eligibleImagePlacementCount": 52,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        237.6,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 51,
+          "xref": 1597,
+          "bbox": [
+            56.5,
+            113.2,
+            597.9,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1597,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        597.9,
+        807.4
+      ],
+      "assignedCropBbox": [
+        56.5,
+        530.5,
+        267.6,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 310951,
+      "imageDimensions": [
+        529,
+        529
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Mint & Chalk",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p36-2-Neo_Mint___Chalk-85d945b212a944968628412c4bfcbbea.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 36,
+      "pages": [
+        36
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 52,
+      "eligibleImagePlacementCount": 52,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        267.6,
+        749.6,
+        377.8,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 51,
+          "xref": 1597,
+          "bbox": [
+            56.5,
+            113.2,
+            597.9,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1597,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        597.9,
+        807.4
+      ],
+      "assignedCropBbox": [
+        267.6,
+        601.6,
+        407.7,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 199747,
+      "imageDimensions": [
+        351,
+        352
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Mint",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p36-3-Neo_Mint-41792a39779f47c5a509901f636491cf.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 36,
+      "pages": [
+        36
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 52,
+      "eligibleImagePlacementCount": 52,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        407.7,
+        749.6,
+        495.5,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 51,
+          "xref": 1597,
+          "bbox": [
+            56.5,
+            113.2,
+            597.9,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1597,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        597.9,
+        807.4
+      ],
+      "assignedCropBbox": [
+        407.7,
+        559.1,
+        590.3,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 284773,
+      "imageDimensions": [
+        457,
+        458
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Chalk & Blue Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p37-1-Neo_Chalk___Blue_Decor_1-2d34887d7a594b3fbe8f72b596c0b5f6.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 37,
+      "pages": [
+        37
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        778.0,
+        260.7,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1601,
+          "bbox": [
+            113.3,
+            56.4,
+            1138.6,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1601,
+      "assignedImageBbox": [
+        113.3,
+        56.4,
+        1138.6,
+        750.9
+      ],
+      "assignedCropBbox": [
+        113.3,
+        576.6,
+        287.6,
+        750.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 142282,
+      "imageDimensions": [
+        436,
+        437
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Blue & Blue Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p37-2-Neo_Blue___Blue_Decor_2-7042067662b8454d9c247a08c9246018.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 37,
+      "pages": [
+        37
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        287.6,
+        778.0,
+        428.0,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1601,
+          "bbox": [
+            113.3,
+            56.4,
+            1138.6,
+            750.9
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1601,
+      "assignedImageBbox": [
+        113.3,
+        56.4,
+        1138.6,
+        750.9
+      ],
+      "assignedCropBbox": [
+        287.6,
+        576.7,
+        461.7,
+        750.9
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 219402,
+      "imageDimensions": [
+        437,
+        437
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Chalk & Blue Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p38-1-Neo_Chalk___Blue_Decor_1-1ee7c5c32744472aaf9b1ada7c76a7e4.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 38,
+      "pages": [
+        38
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 52,
+      "eligibleImagePlacementCount": 52,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        667.4,
+        204.0,
+        698.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 51,
+          "xref": 1672,
+          "bbox": [
+            -0.2,
+            -0.0,
+            541.1,
+            637.5
+          ],
+          "verticalGap": 29.9
+        }
+      ],
+      "assignedImageXref": 1672,
+      "assignedImageBbox": [
+        -0.2,
+        -0.0,
+        541.1,
+        637.5
+      ],
+      "assignedCropBbox": [
+        56.7,
+        463.3,
+        230.9,
+        637.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 123081,
+      "imageDimensions": [
+        437,
+        436
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Blue & Blue Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p38-2-Neo_Blue___Blue_Decor_2-bef0a479b9b54f9cbceae17b2fd7dadf.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 38,
+      "pages": [
+        38
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 52,
+      "eligibleImagePlacementCount": 52,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        230.9,
+        667.4,
+        371.4,
+        698.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 51,
+          "xref": 1672,
+          "bbox": [
+            -0.2,
+            -0.0,
+            541.1,
+            637.5
+          ],
+          "verticalGap": 29.9
+        }
+      ],
+      "assignedImageXref": 1672,
+      "assignedImageBbox": [
+        -0.2,
+        -0.0,
+        541.1,
+        637.5
+      ],
+      "assignedCropBbox": [
+        230.9,
+        463.3,
+        405.1,
+        637.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 277227,
+      "imageDimensions": [
+        436,
+        436
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Navy & Navy Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p39-1-Neo_Navy___Navy_Decor_1-928bb8f792804044a56442f7d6701085.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 39,
+      "pages": [
+        39
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        233.7,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1676,
+          "bbox": [
+            56.5,
+            84.8,
+            1138.7,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1676,
+      "assignedImageBbox": [
+        56.5,
+        84.8,
+        1138.7,
+        807.4
+      ],
+      "assignedCropBbox": [
+        56.5,
+        537.4,
+        260.8,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 344952,
+      "imageDimensions": [
+        511,
+        512
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Navy Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p39-2-Neo_Navy_Decor_2-88b9bcf9b7174ff3b7f4368628e93c9a.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 39,
+      "pages": [
+        39
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        260.8,
+        749.6,
+        374.9,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1676,
+          "bbox": [
+            56.5,
+            84.8,
+            1138.7,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1676,
+      "assignedImageBbox": [
+        56.5,
+        84.8,
+        1138.7,
+        807.4
+      ],
+      "assignedCropBbox": [
+        260.8,
+        596.6,
+        405.8,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 200601,
+      "imageDimensions": [
+        364,
+        364
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Chalk",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p39-3-Neo_Chalk-9c2a307470134e3d9f0f403d352bf8cd.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 39,
+      "pages": [
+        39
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        405.8,
+        749.6,
+        493.6,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1676,
+          "bbox": [
+            56.5,
+            84.8,
+            1138.7,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1676,
+      "assignedImageBbox": [
+        56.5,
+        84.8,
+        1138.7,
+        807.4
+      ],
+      "assignedCropBbox": [
+        405.8,
+        565.9,
+        581.5,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 229049,
+      "imageDimensions": [
+        440,
+        441
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Navy & Navy Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p40-1-Neo_Navy___Navy_Decor_1-0c137f790c0343e3964227b510ecff55.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 40,
+      "pages": [
+        40
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        695.7,
+        205.3,
+        726.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1724,
+          "bbox": [
+            56.5,
+            56.5,
+            512.6,
+            665.8
+          ],
+          "verticalGap": 29.9
+        }
+      ],
+      "assignedImageXref": 1724,
+      "assignedImageBbox": [
+        56.5,
+        56.5,
+        512.6,
+        665.8
+      ],
+      "assignedCropBbox": [
+        56.5,
+        489.8,
+        232.4,
+        665.8
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 357292,
+      "imageDimensions": [
+        441,
+        441
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Chalk",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p40-2-Neo_Chalk-65cd1c4147ac45bc8d0431a7bbc3e7fd.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 40,
+      "pages": [
+        40
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        232.4,
+        695.7,
+        320.2,
+        726.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1724,
+          "bbox": [
+            56.5,
+            56.5,
+            512.6,
+            665.8
+          ],
+          "verticalGap": 29.9
+        }
+      ],
+      "assignedImageXref": 1724,
+      "assignedImageBbox": [
+        56.5,
+        56.5,
+        512.6,
+        665.8
+      ],
+      "assignedCropBbox": [
+        232.4,
+        490.0,
+        408.1,
+        665.8
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 338274,
+      "imageDimensions": [
+        440,
+        440
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco, Cocoa & Neo Cocoa Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p41-1-Neo_Bianco__Cocoa___Neo_Cocoa_Decor_2-cbb96f979166445d9f9bfbe746fe3670.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 41,
+      "pages": [
+        41
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        670.3,
+        326.5,
+        701.4
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1728,
+          "bbox": [
+            84.8,
+            84.9,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1728,
+      "assignedImageBbox": [
+        84.8,
+        84.9,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        84.8,
+        453.7,
+        293.4,
+        662.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 283343,
+      "imageDimensions": [
+        522,
+        522
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco & Cocoa",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p41-2-Neo_Bianco___Cocoa-9e8bfe1510fa460fac48fd3128d3c711.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 41,
+      "pages": [
+        41
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        263.2,
+        721.3,
+        388.9,
+        752.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1728,
+          "bbox": [
+            84.8,
+            84.9,
+            1195.4,
+            779.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1728,
+      "assignedImageBbox": [
+        84.8,
+        84.9,
+        1195.4,
+        779.1
+      ],
+      "assignedCropBbox": [
+        263.2,
+        563.5,
+        413.0,
+        713.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 226138,
+      "imageDimensions": [
+        375,
+        376
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco, Cocoa & Neo Cocoa Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p42-1-Neo_Bianco__Cocoa___Neo_Cocoa_Decor_2-bdc4ba88980e40cfb8e53a0bf80b6a45.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 42,
+      "pages": [
+        42
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        749.6,
+        269.8,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1778,
+          "bbox": [
+            56.6,
+            130.0,
+            473.4,
+            722.5
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1778,
+      "assignedImageBbox": [
+        56.6,
+        130.0,
+        473.4,
+        722.5
+      ],
+      "assignedCropBbox": [
+        56.6,
+        482.0,
+        297.2,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 334880,
+      "imageDimensions": [
+        603,
+        603
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco & Cocoa",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p42-2-Neo_Bianco___Cocoa-cb257673e3694936aaab7ffebf785d35.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 42,
+      "pages": [
+        42
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        297.2,
+        749.6,
+        422.9,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1778,
+          "bbox": [
+            56.6,
+            130.0,
+            473.4,
+            722.5
+          ],
+          "verticalGap": 27.1
+        }
+      ],
+      "assignedImageXref": 1778,
+      "assignedImageBbox": [
+        56.6,
+        130.0,
+        473.4,
+        722.5
+      ],
+      "assignedCropBbox": [
+        297.2,
+        546.3,
+        473.4,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 281685,
+      "imageDimensions": [
+        441,
+        442
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco & Slate Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p43-1-Neo_Bianco___Slate_Decor_1-ec9b7a5f1d484125be0045aa5a081065.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 43,
+      "pages": [
+        43
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        236.7,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1783,
+          "bbox": [
+            56.4,
+            85.0,
+            1110.4,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1783,
+      "assignedImageBbox": [
+        56.4,
+        85.0,
+        1110.4,
+        807.5
+      ],
+      "assignedCropBbox": [
+        56.4,
+        532.2,
+        265.8,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 330148,
+      "imageDimensions": [
+        524,
+        525
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Slate & Slate Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p43-2-Neo_Slate___Slate_Decor_2-34061d745b97406d82b69e013fa04f99.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 43,
+      "pages": [
+        43
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        265.8,
+        749.6,
+        409.0,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1783,
+          "bbox": [
+            56.4,
+            85.0,
+            1110.4,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1783,
+      "assignedImageBbox": [
+        56.4,
+        85.0,
+        1110.4,
+        807.5
+      ],
+      "assignedCropBbox": [
+        265.8,
+        569.6,
+        437.8,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 45885,
+      "imageDimensions": [
+        431,
+        431
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Slate",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p43-3-Neo_Slate-8a5bdb4c3440493cbccba08817b6da49.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 43,
+      "pages": [
+        43
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        437.8,
+        749.6,
+        525.6,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1783,
+          "bbox": [
+            56.4,
+            85.0,
+            1110.4,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1783,
+      "assignedImageBbox": [
+        56.4,
+        85.0,
+        1110.4,
+        807.5
+      ],
+      "assignedCropBbox": [
+        437.8,
+        560.9,
+        618.6,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 55945,
+      "imageDimensions": [
+        453,
+        453
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Slate Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": null,
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p44-1-Neo_Slate_Decor_1-cefcd6e7826b4e429283ee55a67d8317.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 44,
+      "pages": [
+        44
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        197.6,
+        769.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1836,
+          "bbox": [
+            56.5,
+            113.2,
+            597.8,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1836,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        597.8,
+        807.5
+      ],
+      "assignedCropBbox": [
+        56.5,
+        571.6,
+        226.5,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 344814,
+      "imageDimensions": [
+        426,
+        426
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Slate Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p44-2-Neo_Slate_Decor_1-0422f5254c7945478051e058569a1c17.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 44,
+      "pages": [
+        44
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        197.6,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1836,
+          "bbox": [
+            56.5,
+            113.2,
+            597.8,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1836,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        597.8,
+        807.5
+      ],
+      "assignedCropBbox": [
+        56.5,
+        571.6,
+        226.5,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 344814,
+      "imageDimensions": [
+        426,
+        426
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco & Slate Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p44-3-Neo_Bianco___Slate_Decor_2-995e7db09000490eb38accd27517e8a7.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 44,
+      "pages": [
+        44
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        226.5,
+        749.6,
+        378.2,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1836,
+          "bbox": [
+            56.5,
+            113.2,
+            597.8,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1836,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        597.8,
+        807.5
+      ],
+      "assignedCropBbox": [
+        226.5,
+        581.9,
+        386.2,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 128603,
+      "imageDimensions": [
+        400,
+        401
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco & Slate Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": null,
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p44-4-Neo_Bianco___Slate_Decor_2-c8fbfd4cf17e44a1bceaa99172327405.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 44,
+      "pages": [
+        44
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        226.5,
+        749.6,
+        378.2,
+        769.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1836,
+          "bbox": [
+            56.5,
+            113.2,
+            597.8,
+            807.5
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 1836,
+      "assignedImageBbox": [
+        56.5,
+        113.2,
+        597.8,
+        807.5
+      ],
+      "assignedCropBbox": [
+        226.5,
+        581.9,
+        386.2,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 128603,
+      "imageDimensions": [
+        400,
+        401
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Beige Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p45-1-Neo_Beige_Decor_2-b862da86716744e1801dc01ab599d810.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 45,
+      "pages": [
+        45
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        427.2,
+        778.0,
+        543.2,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1840,
+          "bbox": [
+            56.7,
+            56.5,
+            1110.4,
+            722.3
+          ],
+          "verticalGap": 55.6
+        }
+      ],
+      "assignedImageXref": 1840,
+      "assignedImageBbox": [
+        56.7,
+        56.5,
+        1110.4,
+        722.3
+      ],
+      "assignedCropBbox": [
+        427.2,
+        495.3,
+        654.3,
+        722.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 608522,
+      "imageDimensions": [
+        568,
+        568
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Beige & Beige Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p45-2-Neo_Beige___Beige_Decor_1-14415f7f4b3b44f5ae92ad02fd06093b.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 45,
+      "pages": [
+        45
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        654.3,
+        778.0,
+        806.7,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1840,
+          "bbox": [
+            56.7,
+            56.5,
+            1110.4,
+            722.3
+          ],
+          "verticalGap": 55.6
+        }
+      ],
+      "assignedImageXref": 1840,
+      "assignedImageBbox": [
+        56.7,
+        56.5,
+        1110.4,
+        722.3
+      ],
+      "assignedCropBbox": [
+        654.3,
+        543.3,
+        833.4,
+        722.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 413769,
+      "imageDimensions": [
+        449,
+        448
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Bianco & Beige Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p45-3-Neo_Bianco___Beige_Decor_2-4e76df22afbf48bf9ce3bde1cdbb1a30.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 45,
+      "pages": [
+        45
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        833.4,
+        778.0,
+        990.9,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1840,
+          "bbox": [
+            56.7,
+            56.5,
+            1110.4,
+            722.3
+          ],
+          "verticalGap": 55.6
+        }
+      ],
+      "assignedImageXref": 1840,
+      "assignedImageBbox": [
+        56.7,
+        56.5,
+        1110.4,
+        722.3
+      ],
+      "assignedCropBbox": [
+        833.4,
+        495.3,
+        1060.4,
+        722.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 112341,
+      "imageDimensions": [
+        569,
+        568
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Beige & Beige Decor 1",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p46-1-Neo_Beige___Beige_Decor_1-5b8c4a296d4643718ad40143181a5b5b.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 46,
+      "pages": [
+        46
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        667.4,
+        209.1,
+        698.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1873,
+          "bbox": [
+            -0.2,
+            -0.0,
+            541.1,
+            637.4
+          ],
+          "verticalGap": 29.9
+        }
+      ],
+      "assignedImageXref": 1873,
+      "assignedImageBbox": [
+        -0.2,
+        -0.0,
+        541.1,
+        637.4
+      ],
+      "assignedCropBbox": [
+        56.7,
+        456.6,
+        237.5,
+        637.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 297230,
+      "imageDimensions": [
+        453,
+        453
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Neo Beige Decor 2",
+      "category": null,
+      "collection": "Tiny Tiles",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p46-2-Neo_Beige_Decor_2-8e61501ecde844a59d5f759938558e7f.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 46,
+      "pages": [
+        46
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 53,
+      "eligibleImagePlacementCount": 53,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        237.5,
+        667.4,
+        353.5,
+        698.5
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 52,
+          "xref": 1873,
+          "bbox": [
+            -0.2,
+            -0.0,
+            541.1,
+            637.4
+          ],
+          "verticalGap": 29.9
+        }
+      ],
+      "assignedImageXref": 1873,
+      "assignedImageBbox": [
+        -0.2,
+        -0.0,
+        541.1,
+        637.4
+      ],
+      "assignedCropBbox": [
+        237.5,
+        456.6,
+        418.4,
+        637.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 348202,
+      "imageDimensions": [
+        453,
+        453
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Peanut & Berry",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "58x250mm",
+      "surface": "Glossy",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p49-1-Spectra_Peanut___Berry-37e52e8708a2437e80e0b61fe83dabeb.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 49,
+      "pages": [
+        49
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        778.0,
+        189.2,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1893,
+          "bbox": [
+            56.7,
+            56.6,
+            1138.5,
+            722.5
+          ],
+          "verticalGap": 55.5
+        }
+      ],
+      "assignedImageXref": 1893,
+      "assignedImageBbox": [
+        56.7,
+        56.6,
+        1138.5,
+        722.5
+      ],
+      "assignedCropBbox": [
+        61.8,
+        56.6,
+        216.3,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 812440,
+      "imageDimensions": [
+        387,
+        1666
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p49-2-Spectra_Mushroom-8ef5abf1dcdc4b0c89a8d7e93541d2f0.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 49,
+      "pages": [
+        49
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        221.5,
+        778.0,
+        337.3,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1893,
+          "bbox": [
+            56.7,
+            56.6,
+            1138.5,
+            722.5
+          ],
+          "verticalGap": 55.5
+        }
+      ],
+      "assignedImageXref": 1893,
+      "assignedImageBbox": [
+        56.7,
+        56.6,
+        1138.5,
+        722.5
+      ],
+      "assignedCropBbox": [
+        221.5,
+        557.7,
+        386.3,
+        722.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 137156,
+      "imageDimensions": [
+        413,
+        413
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "58x250mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p50-1-Spectra_Mushroom-227400de1f2f4f5a9d08b832fbbccff9.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 50,
+      "pages": [
+        50
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 57,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        85.0,
+        749.6,
+        200.9,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 6,
+          "xref": 2024,
+          "bbox": [
+            56.4,
+            113.3,
+            597.9,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 2024,
+      "assignedImageBbox": [
+        56.4,
+        113.3,
+        597.9,
+        807.4
+      ],
+      "assignedCropBbox": [
+        62.7,
+        113.3,
+        223.7,
+        807.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 968849,
+      "imageDimensions": [
+        404,
+        1736
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mushroom",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p50-2-Spectra_Mushroom-b0109370a75e4879b3cbea8ebf7d5199.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 50,
+      "pages": [
+        50
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 57,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        230.0,
+        749.6,
+        345.8,
+        780.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 6,
+          "xref": 2024,
+          "bbox": [
+            56.4,
+            113.3,
+            597.9,
+            807.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 2024,
+      "assignedImageBbox": [
+        56.4,
+        113.3,
+        597.9,
+        807.4
+      ],
+      "assignedCropBbox": [
+        230.0,
+        596.7,
+        374.9,
+        741.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 191306,
+      "imageDimensions": [
+        364,
+        364
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Herbs",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "58x250mm",
+      "surface": "Glossy",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p51-1-Spectra_Herbs-521245fd707a494692edf822160a50a6.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 51,
+      "pages": [
+        51
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        778.0,
+        209.3,
+        809.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 2035,
+          "bbox": [
+            113.1,
+            56.6,
+            1138.8,
+            750.8
+          ],
+          "verticalGap": 27.2
+        }
+      ],
+      "assignedImageXref": 2035,
+      "assignedImageBbox": [
+        113.1,
+        56.6,
+        1138.8,
+        750.8
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 264135,
+      "imageDimensions": [
+        2137,
+        1446
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Mustard",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "58x250mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p52-1-Spectra_Mustard-6287e4f510414806b2b4e8353908d774.jpeg",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 52,
+      "pages": [
+        52
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 57,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 2,
+      "productTextBbox": [
+        682.6,
+        339.2,
+        794.9,
+        370.4
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 7,
+          "xref": 2143,
+          "bbox": [
+            675.8,
+            445.8,
+            757.5,
+            475.3
+          ],
+          "verticalGap": 75.4
+        },
+        {
+          "imageIndex": 8,
+          "xref": 2151,
+          "bbox": [
+            682.6,
+            -0.2,
+            1195.3,
+            324.8
+          ],
+          "verticalGap": 14.4
+        }
+      ],
+      "assignedImageXref": 2151,
+      "assignedImageBbox": [
+        682.6,
+        -0.2,
+        1195.3,
+        324.8
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 64978,
+      "imageDimensions": [
+        1068,
+        677
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Chilli",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "58x250mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p52-2-Spectra_Chilli-6b4d04c41af941fbbe736e712e218bf1.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 52,
+      "pages": [
+        52
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 57,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        695.7,
+        169.0,
+        726.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 2039,
+          "bbox": [
+            56.5,
+            56.7,
+            512.7,
+            665.6
+          ],
+          "verticalGap": 30.1
+        }
+      ],
+      "assignedImageXref": 2039,
+      "assignedImageBbox": [
+        56.5,
+        56.7,
+        512.7,
+        665.6
+      ],
+      "assignedCropBbox": [
+        56.8,
+        56.7,
+        198.0,
+        665.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 546286,
+      "imageDimensions": [
+        355,
+        1524
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Spectra Cheese",
+      "category": null,
+      "collection": "Tiny Tiles Bricks",
+      "size": "198x198mm",
+      "surface": "SCS Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-tiny-20260927-v4/product_crops/p52-3-Spectra_Cheese-09d1b31e0bb94c5495eb487a7f6a7269.png",
+      "sourceFile": "tiny_tiles_simpolo_catalogue_collection.pdf",
+      "sourcePage": 52,
+      "pages": [
+        52
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 57,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        198.3,
+        695.7,
+        302.8,
+        726.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 2039,
+          "bbox": [
+            56.5,
+            56.7,
+            512.7,
+            665.6
+          ],
+          "verticalGap": 30.1
+        }
+      ],
+      "assignedImageXref": 2039,
+      "assignedImageBbox": [
+        56.5,
+        56.7,
+        512.7,
+        665.6
+      ],
+      "assignedCropBbox": [
+        198.3,
+        524.0,
+        339.9,
+        665.6
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 106245,
+      "imageDimensions": [
+        355,
+        356
+      ],
+      "imageFormat": "PNG"
+    }
+  ]
+}

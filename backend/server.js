@@ -5,9 +5,84 @@ const path = require("path");
 const fs = require("fs");
 const axios = require("axios");
 const FormData = require("form-data");
+const crypto = require("crypto");
 
 const app = express();
-let extractedProducts = [];
+const productsFilePath = path.join(__dirname, "data", "products.json");
+const aiServiceUrl = process.env.AI_SERVICE_URL || "http://127.0.0.1:8000";
+
+function loadExtractedProducts() {
+  try {
+    const products = JSON.parse(fs.readFileSync(productsFilePath, "utf8"));
+    if (!Array.isArray(products)) {
+      throw new Error("Product store must contain a JSON array");
+    }
+    return products;
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      return [];
+    }
+    throw error;
+  }
+}
+
+function persistExtractedProducts(products) {
+  fs.mkdirSync(path.dirname(productsFilePath), { recursive: true });
+  const temporaryPath = `${productsFilePath}.${process.pid}.tmp`;
+  fs.writeFileSync(temporaryPath, `${JSON.stringify(products, null, 2)}\n`, "utf8");
+  fs.renameSync(temporaryPath, productsFilePath);
+}
+
+function productIdentity(product) {
+  const identityFields = [
+    product.sourceFile,
+    product.sourcePage,
+    product.productCode,
+    product.productName,
+    product.category,
+    product.collection,
+    product.size,
+    product.surface,
+    product.finish,
+    product.color,
+  ];
+
+  return JSON.stringify(identityFields.map((value) => {
+    if (Array.isArray(value)) {
+      return value.map((item) => String(item ?? "").trim().toLowerCase()).sort();
+    }
+    return String(value ?? "").trim().toLowerCase();
+  }));
+}
+
+function mergeExtractedProducts(existingProducts, incomingProducts) {
+  const mergedProducts = [...existingProducts];
+  const productIndexes = new Map(
+    mergedProducts.map((product, index) => [productIdentity(product), index])
+  );
+
+  for (const product of incomingProducts) {
+    const identity = productIdentity(product);
+    const existingIndex = productIndexes.get(identity);
+
+    if (existingIndex === undefined) {
+      productIndexes.set(identity, mergedProducts.length);
+      mergedProducts.push(product);
+      continue;
+    }
+
+    const existingProduct = mergedProducts[existingIndex];
+    mergedProducts[existingIndex] = {
+      ...existingProduct,
+      ...product,
+      image: product.image || existingProduct.image || null,
+    };
+  }
+
+  return mergedProducts;
+}
+
+let extractedProducts = loadExtractedProducts();
 
 app.use(cors());
 app.use(express.json());
@@ -48,7 +123,7 @@ const storage = multer.diskStorage({
   },
   filename: (req, file, cb) => {
     const safeName = file.originalname.replace(/[^a-zA-Z0-9.-]/g, "_");
-    const uniqueName = `${Date.now()}-${safeName}`;
+    const uniqueName = `${Date.now()}-${crypto.randomUUID()}-${safeName}`;
     cb(null, uniqueName);
   },
 });
@@ -72,14 +147,20 @@ const upload = multer({
 // Node → Python PDF Extraction Helper
 // =====================================================
 
-async function processPdfWithPython(filename) {
+async function processPdfWithPython(file) {
+  const filename = path.basename(file.filename || "");
+  const fileName = file.fileName || filename;
   const filePath = path.join(uploadDir, filename);
 
-  if (!fs.existsSync(filePath)) {
+  if (!filename || !filename.toLowerCase().endsWith(".pdf") || !fs.existsSync(filePath)) {
     return {
       success: false,
       filename: filename,
-      error: "File not found on server",
+      fileName,
+      status: "error",
+      products: [],
+      productCount: 0,
+      errors: ["File not found on server"],
     };
   }
 
@@ -88,14 +169,14 @@ async function processPdfWithPython(filename) {
     const form = new FormData();
 
     form.append("file", fileBuffer, {
-      filename: filename,
+      filename,
       contentType: "application/pdf",
     });
 
     console.log(`➡️ [AI Service] Forwarding PDF: ${filename} (${(fileBuffer.length / 1024 / 1024).toFixed(2)} MB)`);
 
     const response = await axios.post(
-      "http://127.0.0.1:8000/extract",
+      `${aiServiceUrl}/extract`,
       form,
       {
         headers: {
@@ -109,10 +190,31 @@ async function processPdfWithPython(filename) {
 
     console.log(`✅ [AI Service] Extraction completed for: ${filename} (${response.data.totalProducts || 0} products)`);
 
+    const products = Array.isArray(response.data?.products)
+      ? response.data.products.map((product) => ({
+          productCode: product.productCode ?? null,
+          productName: product.productName ?? null,
+          category: product.category ?? null,
+          collection: product.collection ?? null,
+          size: product.size ?? null,
+          surface: product.surface ?? null,
+          finish: product.finish ?? null,
+          color: product.color ?? null,
+          image: product.image ?? null,
+          sourceFile: fileName,
+          sourcePage: product.sourcePage ?? product.pages?.[0] ?? null,
+          pages: Array.isArray(product.pages) ? product.pages : [],
+        }))
+      : [];
+
     return {
       success: true,
-      filename: filename,
-      pythonResult: response.data,
+      filename,
+      fileName,
+      status: "success",
+      products,
+      productCount: products.length,
+      errors: [],
     };
 
   } catch (error) {
@@ -124,10 +226,15 @@ async function processPdfWithPython(filename) {
     return {
       success: false,
       filename: filename,
-      error:
+      fileName,
+      status: "error",
+      products: [],
+      productCount: 0,
+      errors: [
         error.response?.data?.detail ||
         error.message ||
         "AI service processing error",
+      ],
     };
   }
 }
@@ -146,7 +253,7 @@ app.get("/", (req, res) => {
 
 app.get("/api/ai-test", async (req, res) => {
   try {
-    const response = await axios.get("http://127.0.0.1:8000/health", { timeout: 5000 });
+    const response = await axios.get(`${aiServiceUrl}/health`, { timeout: 5000 });
     return res.json({
       success: true,
       message: "Node.js connected to Python AI service successfully",
@@ -210,16 +317,24 @@ app.post(
 
 app.post("/api/ai-extract", async (req, res) => {
   try {
-    // 1. Determine which files to process
-    let filesToProcess = [];
-
-    if (Array.isArray(req.body?.filenames) && req.body.filenames.length > 0) {
-      filesToProcess = req.body.filenames;
-    } else {
-      filesToProcess = fs
-        .readdirSync(uploadDir)
-        .filter((file) => file.toLowerCase().endsWith(".pdf"));
-    }
+    const requestedFiles = Array.isArray(req.body?.files)
+      ? req.body.files
+      : Array.isArray(req.body?.filenames)
+        ? req.body.filenames.map((filename) => ({ filename }))
+        : fs.readdirSync(uploadDir)
+          .filter((filename) => filename.toLowerCase().endsWith(".pdf"))
+          .map((filename) => ({ filename }));
+    const filesToProcess = requestedFiles.map((file) => {
+      const filename = typeof file === "string" ? file : String(file?.filename || "");
+      const fileName = typeof file === "object" && file?.fileName
+        ? String(file.fileName)
+        : filename;
+      return {
+        filename,
+        fileName,
+        invalid: !filename || path.basename(filename) !== filename || !filename.toLowerCase().endsWith(".pdf"),
+      };
+    });
 
     if (filesToProcess.length === 0) {
       return res.status(404).json({
@@ -230,33 +345,46 @@ app.post("/api/ai-extract", async (req, res) => {
 
     console.log(`📚 Starting AI extraction on ${filesToProcess.length} PDF file(s)...`);
 
-    // 2. Process files sequentially to ensure 100% stability and zero stream drops
+    // Process each PDF in its own Python request so one failure cannot stop the batch.
     const results = [];
-    const newExtractedProducts = [];
+    const combinedProducts = [];
 
     for (let i = 0; i < filesToProcess.length; i++) {
-      const filename = filesToProcess[i];
+      const file = filesToProcess[i];
+      if (file.invalid) {
+        results.push({
+          success: false,
+          filename: file.filename,
+          fileName: file.fileName,
+          status: "error",
+          products: [],
+          productCount: 0,
+          errors: ["Invalid uploaded PDF identifier"],
+        });
+        continue;
+      }
+
+      const filename = file.filename;
       console.log(`🚀 [${i + 1}/${filesToProcess.length}] Processing: ${filename}`);
 
-      const result = await processPdfWithPython(filename);
+      const result = await processPdfWithPython(file);
       results.push(result);
 
-      if (result.success && Array.isArray(result.pythonResult?.products)) {
-        const fileProducts = result.pythonResult.products.map((product) => ({
-          ...product,
-          sourceFile: result.filename,
-        }));
-        newExtractedProducts.push(...fileProducts);
+      if (result.success) {
+        combinedProducts.push(...result.products);
       }
     }
 
-    // Append to in-memory store (or replace if requested)
-    extractedProducts = newExtractedProducts;
+    if (combinedProducts.length > 0) {
+      const mergedProducts = mergeExtractedProducts(extractedProducts, combinedProducts);
+      persistExtractedProducts(mergedProducts);
+      extractedProducts = mergedProducts;
+    }
 
     const successfulCount = results.filter((r) => r.success).length;
     const failedCount = results.filter((r) => !r.success).length;
 
-    console.log(`🎉 Extraction finished: ${successfulCount} succeeded, ${failedCount} failed. Total products: ${extractedProducts.length}`);
+    console.log(`Extraction finished: ${successfulCount} succeeded, ${failedCount} failed. Total products: ${combinedProducts.length}`);
 
     return res.json({
       success: true,
@@ -264,7 +392,8 @@ app.post("/api/ai-extract", async (req, res) => {
       totalFiles: results.length,
       successfulFiles: successfulCount,
       failedFiles: failedCount,
-      totalProducts: extractedProducts.length,
+      totalProducts: combinedProducts.length,
+      products: combinedProducts,
       files: results,
     });
 
@@ -315,11 +444,12 @@ app.delete("/api/clear", (req, res) => {
       }
     }
 
+    persistExtractedProducts([]);
     extractedProducts = [];
 
     return res.json({
       success: true,
-      message: "Uploaded PDFs cleared successfully",
+      message: "Uploaded PDFs and extracted products cleared successfully",
       deletedFiles: deletedCount,
     });
   } catch (error) {
@@ -348,7 +478,7 @@ app.use((err, req, res, next) => {
 // START SERVER
 // =====================================================
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Ceramic AI Backend running on http://localhost:${PORT}`);

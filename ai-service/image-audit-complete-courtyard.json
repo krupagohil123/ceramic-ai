@@ -1,0 +1,3152 @@
+{
+  "sourceFile": "029-_Courtyard_Catalogue.pdf",
+  "totalPages": 50,
+  "totalProducts": 52,
+  "productsWithImage": 52,
+  "productsWithImageNull": 0,
+  "imageCoveragePercent": 100.0,
+  "auditTotals": {
+    "validImageFiles": 52,
+    "missingSourceImages": 0,
+    "extractionFailures": 0,
+    "matchingFailures": 0,
+    "cropFailures": 0,
+    "missingFiles": 0,
+    "invalidFiles": 0,
+    "duplicateImagePaths": 0,
+    "duplicateFilenames": 0,
+    "unexplainedMissingImages": 0
+  },
+  "missingImageProducts": [],
+  "products": [
+    {
+      "productCode": null,
+      "productName": "Black Beach",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p9-1-Black_Beach-8f9d597f23ef4a1c94e07b328f7c9525.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 9,
+      "pages": [
+        9
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        991.3,
+        768.8,
+        1081.6,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 221,
+          "bbox": [
+            56.1,
+            112.9,
+            1082.4,
+            750.5
+          ],
+          "verticalGap": 18.2
+        }
+      ],
+      "assignedImageXref": 221,
+      "assignedImageBbox": [
+        56.1,
+        112.9,
+        1082.4,
+        750.5
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 143847,
+      "imageDimensions": [
+        1368,
+        850
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Black Beach",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p10-1-Black_Beach-25b217fed634466e83ab6da86688ed5e.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 10,
+      "pages": [
+        10
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        768.8,
+        147.0,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 226,
+          "bbox": [
+            56.0,
+            56.1,
+            541.6,
+            750.1
+          ],
+          "verticalGap": 18.7
+        }
+      ],
+      "assignedImageXref": 226,
+      "assignedImageBbox": [
+        56.0,
+        56.1,
+        541.6,
+        750.1
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 58714,
+      "imageDimensions": [
+        647,
+        925
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "River Grey",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p11-1-River_Grey-b130ad97620f4a0c9d0da0b8c45a407c.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 11,
+      "pages": [
+        11
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        809.1,
+        768.8,
+        901.6,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 247,
+          "bbox": [
+            112.8,
+            56.4,
+            1138.9,
+            750.5
+          ],
+          "verticalGap": 18.3
+        }
+      ],
+      "assignedImageXref": 247,
+      "assignedImageBbox": [
+        112.8,
+        56.4,
+        1138.9,
+        750.5
+      ],
+      "assignedCropBbox": [
+        809.1,
+        511.4,
+        928.4,
+        750.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 91192,
+      "imageDimensions": [
+        300,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "River Grey",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Grid",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p11-2-River_Grey-bcdb686afcfe44f9a2f17199c5ba8c8f.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 11,
+      "pages": [
+        11
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        928.4,
+        768.8,
+        1021.0,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 247,
+          "bbox": [
+            112.8,
+            56.4,
+            1138.9,
+            750.5
+          ],
+          "verticalGap": 18.3
+        }
+      ],
+      "assignedImageXref": 247,
+      "assignedImageBbox": [
+        112.8,
+        56.4,
+        1138.9,
+        750.5
+      ],
+      "assignedCropBbox": [
+        928.4,
+        511.4,
+        1047.8,
+        750.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 193213,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Black Beach",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Dune",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p11-3-Black_Beach-d114254f5ab5400cae02add1970fe745.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 11,
+      "pages": [
+        11
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1047.8,
+        768.8,
+        1138.1,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 247,
+          "bbox": [
+            112.8,
+            56.4,
+            1138.9,
+            750.5
+          ],
+          "verticalGap": 18.3
+        }
+      ],
+      "assignedImageXref": 247,
+      "assignedImageBbox": [
+        112.8,
+        56.4,
+        1138.9,
+        750.5
+      ],
+      "assignedCropBbox": [
+        1047.8,
+        659.3,
+        1138.9,
+        750.5
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 66348,
+      "imageDimensions": [
+        229,
+        229
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "River Grey",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Grid",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p12-1-River_Grey-d09d25eb654e48b59e0bd90a30145aa8.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 12,
+      "pages": [
+        12
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        768.8,
+        149.3,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 252,
+          "bbox": [
+            56.0,
+            112.6,
+            484.9,
+            750.0
+          ],
+          "verticalGap": 18.8
+        }
+      ],
+      "assignedImageXref": 252,
+      "assignedImageBbox": [
+        56.0,
+        112.6,
+        484.9,
+        750.0
+      ],
+      "assignedCropBbox": [
+        56.0,
+        509.6,
+        176.0,
+        750.0
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 464441,
+      "imageDimensions": [
+        301,
+        603
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Black Beach",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Dune",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p12-2-Black_Beach-8eb1d0ba642f47499a8f588b56333a54.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 12,
+      "pages": [
+        12
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        176.0,
+        768.8,
+        266.4,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 252,
+          "bbox": [
+            56.0,
+            112.6,
+            484.9,
+            750.0
+          ],
+          "verticalGap": 18.8
+        }
+      ],
+      "assignedImageXref": 252,
+      "assignedImageBbox": [
+        56.0,
+        112.6,
+        484.9,
+        750.0
+      ],
+      "assignedCropBbox": [
+        176.0,
+        630.7,
+        295.4,
+        750.0
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 192263,
+      "imageDimensions": [
+        299,
+        300
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Silver Chalk",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p13-1-Silver_Chalk-cf4688196c9c4c21b6b25fd627c102c8.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 13,
+      "pages": [
+        13
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        794.6,
+        58.6,
+        887.2,
+        89.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 271,
+          "bbox": [
+            56.7,
+            113.0,
+            1138.7,
+            807.3
+          ],
+          "verticalGap": 23.2
+        }
+      ],
+      "assignedImageXref": 271,
+      "assignedImageBbox": [
+        56.7,
+        113.0,
+        1138.7,
+        807.3
+      ],
+      "assignedCropBbox": [
+        794.6,
+        568.3,
+        914.0,
+        807.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 64235,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Silver Chalk",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p13-2-Silver_Chalk-b701887767ca4b788b604c653bbde685.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 13,
+      "pages": [
+        13
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        914.0,
+        58.6,
+        1006.6,
+        89.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 271,
+          "bbox": [
+            56.7,
+            113.0,
+            1138.7,
+            807.3
+          ],
+          "verticalGap": 23.2
+        }
+      ],
+      "assignedImageXref": 271,
+      "assignedImageBbox": [
+        56.7,
+        113.0,
+        1138.7,
+        807.3
+      ],
+      "assignedCropBbox": [
+        914.0,
+        568.3,
+        1033.3,
+        807.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 67612,
+      "imageDimensions": [
+        300,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Silver Chalk",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Dune",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p13-3-Silver_Chalk-7e0c50b72dc84532a7a72d18a1a8e0c2.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 13,
+      "pages": [
+        13
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1033.3,
+        58.6,
+        1121.1,
+        89.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 271,
+          "bbox": [
+            56.7,
+            113.0,
+            1138.7,
+            807.3
+          ],
+          "verticalGap": 23.2
+        }
+      ],
+      "assignedImageXref": 271,
+      "assignedImageBbox": [
+        56.7,
+        113.0,
+        1138.7,
+        807.3
+      ],
+      "assignedCropBbox": [
+        1033.3,
+        701.9,
+        1138.7,
+        807.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 26650,
+      "imageDimensions": [
+        264,
+        265
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Silver Chalk",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Dune",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p14-1-Silver_Chalk-76facad7aa4f49a880684dda107cc5c2.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 14,
+      "pages": [
+        14
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        656.0,
+        144.5,
+        687.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 277,
+          "bbox": [
+            -0.3,
+            -0.2,
+            484.3,
+            637.7
+          ],
+          "verticalGap": 18.3
+        }
+      ],
+      "assignedImageXref": 277,
+      "assignedImageBbox": [
+        -0.3,
+        -0.2,
+        484.3,
+        637.7
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 44915,
+      "imageDimensions": [
+        646,
+        850
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Gomma Camo",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p15-1-Gomma_Camo-f2978b92498c480e8b15ad06d7fd72a0.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 15,
+      "pages": [
+        15
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        798.5,
+        768.8,
+        899.2,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 298,
+          "bbox": [
+            169.6,
+            -0.1,
+            1195.7,
+            750.1
+          ],
+          "verticalGap": 18.7
+        }
+      ],
+      "assignedImageXref": 298,
+      "assignedImageBbox": [
+        169.6,
+        -0.1,
+        1195.7,
+        750.1
+      ],
+      "assignedCropBbox": [
+        798.5,
+        511.0,
+        917.8,
+        750.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 43832,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Gomma Camo",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Grid",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p15-2-Gomma_Camo-679e44989ffc45378478270321859e5d.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 15,
+      "pages": [
+        15
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        917.8,
+        768.8,
+        1018.5,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 298,
+          "bbox": [
+            169.6,
+            -0.1,
+            1195.7,
+            750.1
+          ],
+          "verticalGap": 18.7
+        }
+      ],
+      "assignedImageXref": 298,
+      "assignedImageBbox": [
+        169.6,
+        -0.1,
+        1195.7,
+        750.1
+      ],
+      "assignedCropBbox": [
+        917.8,
+        511.0,
+        1037.2,
+        750.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 49725,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Gomma Camo",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Dune",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p15-3-Gomma_Camo-8d83d4d24d7c44e9bd22824f1a9925af.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 15,
+      "pages": [
+        15
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1037.2,
+        768.8,
+        1137.9,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 298,
+          "bbox": [
+            169.6,
+            -0.1,
+            1195.7,
+            750.1
+          ],
+          "verticalGap": 18.7
+        }
+      ],
+      "assignedImageXref": 298,
+      "assignedImageBbox": [
+        169.6,
+        -0.1,
+        1195.7,
+        750.1
+      ],
+      "assignedCropBbox": [
+        1037.2,
+        630.7,
+        1156.5,
+        750.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 30346,
+      "imageDimensions": [
+        300,
+        300
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Gomma Camo",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Grid",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p16-1-Gomma_Camo-93c61ba65aac448f889cd8aa494fd386.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 16,
+      "pages": [
+        16
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        655.4,
+        157.4,
+        686.6
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 303,
+          "bbox": [
+            56.5,
+            -0.3,
+            541.1,
+            636.9
+          ],
+          "verticalGap": 18.5
+        }
+      ],
+      "assignedImageXref": 303,
+      "assignedImageBbox": [
+        56.5,
+        -0.3,
+        541.1,
+        636.9
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 87496,
+      "imageDimensions": [
+        646,
+        849
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Deep Verde",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Grid",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p17-1-Deep_Verde-54c46e20ff944887a8d6d9792d02f75b.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 17,
+      "pages": [
+        17
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        873.4,
+        768.8,
+        966.0,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 322,
+          "bbox": [
+            -0.3,
+            -0.2,
+            1082.4,
+            750.2
+          ],
+          "verticalGap": 18.6
+        }
+      ],
+      "assignedImageXref": 322,
+      "assignedImageBbox": [
+        -0.3,
+        -0.2,
+        1082.4,
+        750.2
+      ],
+      "assignedCropBbox": [
+        873.4,
+        510.8,
+        992.9,
+        750.2
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 74422,
+      "imageDimensions": [
+        300,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Deep Verde",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p17-2-Deep_Verde-9927e770dfdf4fbc90f9c2b9bcbe3889.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 17,
+      "pages": [
+        17
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        992.9,
+        768.8,
+        1081.4,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 322,
+          "bbox": [
+            -0.3,
+            -0.2,
+            1082.4,
+            750.2
+          ],
+          "verticalGap": 18.6
+        }
+      ],
+      "assignedImageXref": 322,
+      "assignedImageBbox": [
+        -0.3,
+        -0.2,
+        1082.4,
+        750.2
+      ],
+      "assignedCropBbox": [
+        992.9,
+        660.7,
+        1082.4,
+        750.2
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 17084,
+      "imageDimensions": [
+        225,
+        225
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Deep Verde",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Grid",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p18-1-Deep_Verde-f75bd07f3eb4401185b856a291e87d15.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 18,
+      "pages": [
+        18
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        655.4,
+        206.0,
+        686.6
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 327,
+          "bbox": [
+            112.8,
+            -0.4,
+            598.2,
+            637.1
+          ],
+          "verticalGap": 18.3
+        }
+      ],
+      "assignedImageXref": 327,
+      "assignedImageBbox": [
+        112.8,
+        -0.4,
+        598.2,
+        637.1
+      ],
+      "assignedCropBbox": [
+        112.8,
+        396.8,
+        232.7,
+        637.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 65322,
+      "imageDimensions": [
+        301,
+        602
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Deep Verde",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p18-2-Deep_Verde-89612116a8fd479a8a005ab9559929a8.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 18,
+      "pages": [
+        18
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        232.7,
+        655.4,
+        321.2,
+        686.6
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 327,
+          "bbox": [
+            112.8,
+            -0.4,
+            598.2,
+            637.1
+          ],
+          "verticalGap": 18.3
+        }
+      ],
+      "assignedImageXref": 327,
+      "assignedImageBbox": [
+        112.8,
+        -0.4,
+        598.2,
+        637.1
+      ],
+      "assignedCropBbox": [
+        232.7,
+        517.7,
+        352.1,
+        637.1
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 41433,
+      "imageDimensions": [
+        300,
+        299
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Queen Mint",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p19-1-Queen_Mint-bfd777d86ea4406da9d628b1b1d200c9.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 19,
+      "pages": [
+        19
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1033.3,
+        58.6,
+        1125.9,
+        89.8
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 343,
+          "bbox": [
+            112.8,
+            112.7,
+            1139.1,
+            807.4
+          ],
+          "verticalGap": 22.9
+        }
+      ],
+      "assignedImageXref": 343,
+      "assignedImageBbox": [
+        112.8,
+        112.7,
+        1139.1,
+        807.4
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 98469,
+      "imageDimensions": [
+        1368,
+        926
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Queen Mint",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p20-1-Queen_Mint-3b1ff954d6534f2ba5b5c0d30be8dd43.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 20,
+      "pages": [
+        20
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        113.4,
+        768.8,
+        206.0,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 348,
+          "bbox": [
+            113.1,
+            141.7,
+            512.8,
+            750.1
+          ],
+          "verticalGap": 18.7
+        }
+      ],
+      "assignedImageXref": 348,
+      "assignedImageBbox": [
+        113.1,
+        141.7,
+        512.8,
+        750.1
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 33761,
+      "imageDimensions": [
+        532,
+        811
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Queen Mint",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p21-1-Queen_Mint-de18a47be5424fdd934fa93558fa6dcd.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 21,
+      "pages": [
+        21
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 2,
+      "eligibleImagePlacementCount": 2,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        872.3,
+        768.8,
+        960.2,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 365,
+          "bbox": [
+            56.3,
+            96.1,
+            1081.9,
+            750.3
+          ],
+          "verticalGap": 18.5
+        }
+      ],
+      "assignedImageXref": 365,
+      "assignedImageBbox": [
+        56.3,
+        96.1,
+        1081.9,
+        750.3
+      ],
+      "assignedCropBbox": [
+        872.3,
+        631.4,
+        991.3,
+        750.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 94217,
+      "imageDimensions": [
+        299,
+        298
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Garden Geo",
+      "category": null,
+      "collection": "Garden",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p21-2-Garden_Geo-ad14192a504d4fe49afcced5aab584da.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 21,
+      "pages": [
+        21
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 2,
+      "eligibleImagePlacementCount": 2,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        991.3,
+        768.8,
+        1081.8,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 365,
+          "bbox": [
+            56.3,
+            96.1,
+            1081.9,
+            750.3
+          ],
+          "verticalGap": 18.5
+        }
+      ],
+      "assignedImageXref": 365,
+      "assignedImageBbox": [
+        56.3,
+        96.1,
+        1081.9,
+        750.3
+      ],
+      "assignedCropBbox": [
+        991.3,
+        659.7,
+        1081.9,
+        750.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 37783,
+      "imageDimensions": [
+        227,
+        227
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "River Grey",
+      "category": null,
+      "collection": "Garden",
+      "size": "598x598mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p23-1-River_Grey-aa2ec38975674c1190ab9671704d0db1.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 23,
+      "pages": [
+        23
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        938.1,
+        768.8,
+        1025.9,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 566,
+          "bbox": [
+            113.2,
+            56.6,
+            1138.6,
+            750.7
+          ],
+          "verticalGap": 18.1
+        }
+      ],
+      "assignedImageXref": 566,
+      "assignedImageBbox": [
+        113.2,
+        56.6,
+        1138.6,
+        750.7
+      ],
+      "assignedCropBbox": [
+        938.1,
+        642.5,
+        1046.2,
+        750.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 75306,
+      "imageDimensions": [
+        271,
+        271
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Garden Loop",
+      "category": null,
+      "collection": "Garden",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p23-2-Garden_Loop-d62d43e878b44a5a86c9ff72c60fa751.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 23,
+      "pages": [
+        23
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1046.2,
+        768.8,
+        1138.9,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 566,
+          "bbox": [
+            113.2,
+            56.6,
+            1138.6,
+            750.7
+          ],
+          "verticalGap": 18.1
+        }
+      ],
+      "assignedImageXref": 566,
+      "assignedImageBbox": [
+        113.2,
+        56.6,
+        1138.6,
+        750.7
+      ],
+      "assignedCropBbox": [
+        1046.2,
+        658.3,
+        1138.6,
+        750.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 27762,
+      "imageDimensions": [
+        232,
+        232
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Cocoa Mud",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p28-1-Cocoa_Mud-138842f0f18e481c9584f66f7e40a54e.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 28,
+      "pages": [
+        28
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        811.5,
+        768.8,
+        904.1,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 845,
+          "bbox": [
+            170.0,
+            -0.2,
+            1138.8,
+            693.3
+          ],
+          "verticalGap": 75.5
+        }
+      ],
+      "assignedImageXref": 845,
+      "assignedImageBbox": [
+        170.0,
+        -0.2,
+        1138.8,
+        693.3
+      ],
+      "assignedCropBbox": [
+        811.5,
+        454.2,
+        930.9,
+        693.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 51984,
+      "imageDimensions": [
+        300,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Cocoa Mud",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p28-2-Cocoa_Mud-c2f07017099747b285f9fd67a153104b.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 28,
+      "pages": [
+        28
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        930.9,
+        768.8,
+        1023.5,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 845,
+          "bbox": [
+            170.0,
+            -0.2,
+            1138.8,
+            693.3
+          ],
+          "verticalGap": 75.5
+        }
+      ],
+      "assignedImageXref": 845,
+      "assignedImageBbox": [
+        170.0,
+        -0.2,
+        1138.8,
+        693.3
+      ],
+      "assignedCropBbox": [
+        930.9,
+        454.2,
+        1050.2,
+        693.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 38885,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Cocoa Mud",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Soil",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p28-3-Cocoa_Mud-6b67dcb7102145d7af643e917136129c.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 28,
+      "pages": [
+        28
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1050.2,
+        768.8,
+        1138.0,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 845,
+          "bbox": [
+            170.0,
+            -0.2,
+            1138.8,
+            693.3
+          ],
+          "verticalGap": 75.5
+        }
+      ],
+      "assignedImageXref": 845,
+      "assignedImageBbox": [
+        170.0,
+        -0.2,
+        1138.8,
+        693.3
+      ],
+      "assignedCropBbox": [
+        1050.2,
+        604.7,
+        1138.8,
+        693.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 13668,
+      "imageDimensions": [
+        223,
+        223
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Cocoa Mud",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p29-1-Cocoa_Mud-bb8564fd08e64b148e2cef5f2fa64ba1.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        768.8,
+        149.3,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 850,
+          "bbox": [
+            56.3,
+            56.4,
+            541.3,
+            750.3
+          ],
+          "verticalGap": 18.5
+        }
+      ],
+      "assignedImageXref": 850,
+      "assignedImageBbox": [
+        56.3,
+        56.4,
+        541.3,
+        750.3
+      ],
+      "assignedCropBbox": [
+        56.3,
+        510.4,
+        176.0,
+        750.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 99694,
+      "imageDimensions": [
+        301,
+        600
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Cocoa Mud",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p29-2-Cocoa_Mud-65f331323ea24e759f1552e0603863b8.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 29,
+      "pages": [
+        29
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        176.0,
+        768.8,
+        268.6,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 850,
+          "bbox": [
+            56.3,
+            56.4,
+            541.3,
+            750.3
+          ],
+          "verticalGap": 18.5
+        }
+      ],
+      "assignedImageXref": 850,
+      "assignedImageBbox": [
+        56.3,
+        56.4,
+        541.3,
+        750.3
+      ],
+      "assignedCropBbox": [
+        176.0,
+        511.2,
+        295.4,
+        750.3
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 99116,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Ash Brown",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p30-1-Ash_Brown-0c2cb379a35743b690b72745f8e1902d.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 30,
+      "pages": [
+        30
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1040.7,
+        768.8,
+        1133.3,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 871,
+          "bbox": [
+            56.1,
+            113.0,
+            1139.1,
+            750.6
+          ],
+          "verticalGap": 18.2
+        }
+      ],
+      "assignedImageXref": 871,
+      "assignedImageBbox": [
+        56.1,
+        113.0,
+        1139.1,
+        750.6
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 97379,
+      "imageDimensions": [
+        1444,
+        850
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "White Sand",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p32-1-White_Sand-5a9a6e2fae434ee3ba7d46ab9b19c8d5.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 32,
+      "pages": [
+        32
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        985.6,
+        712.1,
+        1078.2,
+        743.3
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 891,
+          "bbox": [
+            56.5,
+            113.1,
+            1082.0,
+            693.7
+          ],
+          "verticalGap": 18.5
+        }
+      ],
+      "assignedImageXref": 891,
+      "assignedImageBbox": [
+        56.5,
+        113.1,
+        1082.0,
+        693.7
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 86398,
+      "imageDimensions": [
+        1367,
+        774
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Lime Stone",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p34-1-Lime_Stone-9e1a67127c6f403395c31ed963dc96c9.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 34,
+      "pages": [
+        34
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        745.7,
+        768.8,
+        838.3,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 916,
+          "bbox": [
+            56.1,
+            56.5,
+            1082.3,
+            750.2
+          ],
+          "verticalGap": 18.6
+        }
+      ],
+      "assignedImageXref": 916,
+      "assignedImageBbox": [
+        56.1,
+        56.5,
+        1082.3,
+        750.2
+      ],
+      "assignedCropBbox": [
+        745.7,
+        511.1,
+        865.0,
+        750.2
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 36578,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Lime Stone",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p34-2-Lime_Stone-f6d44f8ec4e3477484c32560f208f17e.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 34,
+      "pages": [
+        34
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        865.0,
+        768.8,
+        1161.3,
+        804.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 916,
+          "bbox": [
+            56.1,
+            56.5,
+            1082.3,
+            750.2
+          ],
+          "verticalGap": 18.6
+        }
+      ],
+      "assignedImageXref": 916,
+      "assignedImageBbox": [
+        56.1,
+        56.5,
+        1082.3,
+        750.2
+      ],
+      "assignedCropBbox": [
+        865.0,
+        511.1,
+        984.4,
+        750.2
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 38036,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Lime Stone",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p34-3-Lime_Stone-aa503f1ad27b4eb78330f2b4c5f401c6.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 34,
+      "pages": [
+        34
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        984.4,
+        768.8,
+        1077.0,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 916,
+          "bbox": [
+            56.1,
+            56.5,
+            1082.3,
+            750.2
+          ],
+          "verticalGap": 18.6
+        }
+      ],
+      "assignedImageXref": 916,
+      "assignedImageBbox": [
+        56.1,
+        56.5,
+        1082.3,
+        750.2
+      ],
+      "assignedCropBbox": [
+        984.4,
+        554.0,
+        1082.3,
+        750.2
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 31950,
+      "imageDimensions": [
+        246,
+        491
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Lime Stone",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p35-1-Lime_Stone-75bd8947f9a847bd94b19446293ebf55.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 35,
+      "pages": [
+        35
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        768.8,
+        743.7,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 8,
+          "xref": 933,
+          "bbox": [
+            56.5,
+            112.7,
+            597.8,
+            750.7
+          ],
+          "verticalGap": 18.1
+        }
+      ],
+      "assignedImageXref": 933,
+      "assignedImageBbox": [
+        56.5,
+        112.7,
+        597.8,
+        750.7
+      ],
+      "assignedCropBbox": [
+        56.5,
+        511.2,
+        176.0,
+        750.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 52141,
+      "imageDimensions": [
+        300,
+        600
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Lime Stone",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p35-2-Lime_Stone-ae1fda02f5f849fcb111bcaa2fc7ff73.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 35,
+      "pages": [
+        35
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        176.0,
+        768.8,
+        268.6,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 8,
+          "xref": 933,
+          "bbox": [
+            56.5,
+            112.7,
+            597.8,
+            750.7
+          ],
+          "verticalGap": 18.1
+        }
+      ],
+      "assignedImageXref": 933,
+      "assignedImageBbox": [
+        56.5,
+        112.7,
+        597.8,
+        750.7
+      ],
+      "assignedCropBbox": [
+        176.0,
+        511.6,
+        295.4,
+        750.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 72149,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Yellow Ocra",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x598mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p36-1-Yellow_Ocra-ab5f4053f9c449adaae171b399bde885.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 36,
+      "pages": [
+        36
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 2,
+      "eligibleImagePlacementCount": 2,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1055.8,
+        123.4,
+        1144.6,
+        154.6
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 940,
+          "bbox": [
+            711.0,
+            178.0,
+            1195.3,
+            864.2
+          ],
+          "verticalGap": 23.4
+        }
+      ],
+      "assignedImageXref": 940,
+      "assignedImageBbox": [
+        711.0,
+        178.0,
+        1195.3,
+        864.2
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 27431,
+      "imageDimensions": [
+        645,
+        914
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Yellow Ocra",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p36-2-Yellow_Ocra-7783ea6ad267446b8d0eb6d7a7e061c8.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 36,
+      "pages": [
+        36
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 2,
+      "eligibleImagePlacementCount": 2,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        656.0,
+        149.3,
+        687.2
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 1,
+          "xref": 941,
+          "bbox": [
+            -0.3,
+            177.9,
+            598.1,
+            697.1
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 941,
+      "assignedImageBbox": [
+        -0.3,
+        177.9,
+        598.1,
+        697.1
+      ],
+      "assignedCropBbox": [
+        56.7,
+        414.4,
+        173.3,
+        648.0
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 109774,
+      "imageDimensions": [
+        293,
+        585
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Yellow Ocra",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p37-1-Yellow_Ocra-e5c9e075eb2f48df93921df3b3c6ed90.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 37,
+      "pages": [
+        37
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        712.1,
+        149.3,
+        743.3
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 946,
+          "bbox": [
+            56.0,
+            113.0,
+            541.2,
+            694.0
+          ],
+          "verticalGap": 18.1
+        }
+      ],
+      "assignedImageXref": 946,
+      "assignedImageBbox": [
+        56.0,
+        113.0,
+        541.2,
+        694.0
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 60735,
+      "imageDimensions": [
+        647,
+        774
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Terra Red",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p38-1-Terra_Red-e968cd2a08754cf49e8f7ad42ce052ed.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 38,
+      "pages": [
+        38
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1027.5,
+        123.4,
+        1120.1,
+        154.6
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 961,
+          "bbox": [
+            56.2,
+            169.7,
+            1139.2,
+            807.3
+          ],
+          "verticalGap": 15.1
+        }
+      ],
+      "assignedImageXref": 961,
+      "assignedImageBbox": [
+        56.2,
+        169.7,
+        1139.2,
+        807.3
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 116169,
+      "imageDimensions": [
+        1443,
+        850
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Terra Red",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p39-1-Terra_Red-c8a9a66306244cdd8e8a87fe07d90a93.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 39,
+      "pages": [
+        39
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 10,
+      "eligibleImagePlacementCount": 9,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        56.7,
+        712.1,
+        149.3,
+        743.3
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 966,
+          "bbox": [
+            -0.3,
+            -0.3,
+            541.0,
+            693.8
+          ],
+          "verticalGap": 18.3
+        }
+      ],
+      "assignedImageXref": 966,
+      "assignedImageBbox": [
+        -0.3,
+        -0.3,
+        541.0,
+        693.8
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 37761,
+      "imageDimensions": [
+        721,
+        925
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p40-1-Burnt_Brick-99526c210e5b4d378a759f4e220e2456.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 40,
+      "pages": [
+        40
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        751.0,
+        768.8,
+        843.6,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 985,
+          "bbox": [
+            -0.2,
+            -0.4,
+            1082.5,
+            750.4
+          ],
+          "verticalGap": 18.4
+        }
+      ],
+      "assignedImageXref": 985,
+      "assignedImageBbox": [
+        -0.2,
+        -0.4,
+        1082.5,
+        750.4
+      ],
+      "assignedCropBbox": [
+        751.0,
+        511.3,
+        870.4,
+        750.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 52989,
+      "imageDimensions": [
+        299,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p40-2-Burnt_Brick-2473bf47fb3143c1b713aa55c77ef271.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 40,
+      "pages": [
+        40
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        870.4,
+        768.8,
+        1161.3,
+        804.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 985,
+          "bbox": [
+            -0.2,
+            -0.4,
+            1082.5,
+            750.4
+          ],
+          "verticalGap": 18.4
+        }
+      ],
+      "assignedImageXref": 985,
+      "assignedImageBbox": [
+        -0.2,
+        -0.4,
+        1082.5,
+        750.4
+      ],
+      "assignedCropBbox": [
+        870.4,
+        511.3,
+        989.7,
+        750.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 57179,
+      "imageDimensions": [
+        300,
+        599
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Soil",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p40-3-Burnt_Brick-dd550d4253e140428ea52e20e8a00485.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 40,
+      "pages": [
+        40
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        989.7,
+        768.8,
+        1077.5,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 985,
+          "bbox": [
+            -0.2,
+            -0.4,
+            1082.5,
+            750.4
+          ],
+          "verticalGap": 18.4
+        }
+      ],
+      "assignedImageXref": 985,
+      "assignedImageBbox": [
+        -0.2,
+        -0.4,
+        1082.5,
+        750.4
+      ],
+      "assignedCropBbox": [
+        989.7,
+        657.7,
+        1082.5,
+        750.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 13194,
+      "imageDimensions": [
+        233,
+        233
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": null,
+      "finish": "Brick",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p41-1-Burnt_Brick-6ba1961650e249408a1cb262bdf93166.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 41,
+      "pages": [
+        41
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 11,
+      "eligibleImagePlacementCount": 10,
+      "candidateImageCount": 2,
+      "productTextBbox": [
+        113.4,
+        491.6,
+        206.0,
+        522.7
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 990,
+          "bbox": [
+            -0.3,
+            -0.7,
+            428.3,
+            464.4
+          ],
+          "verticalGap": 27.2
+        },
+        {
+          "imageIndex": 9,
+          "xref": 999,
+          "bbox": [
+            113.3,
+            551.8,
+            598.0,
+            864.4
+          ],
+          "verticalGap": 29.1
+        }
+      ],
+      "assignedImageXref": 990,
+      "assignedImageBbox": [
+        -0.3,
+        -0.7,
+        428.3,
+        464.4
+      ],
+      "assignedCropBbox": [
+        113.4,
+        225.3,
+        232.7,
+        464.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 125670,
+      "imageDimensions": [
+        299,
+        598
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x1198mm",
+      "surface": "Polished",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p41-2-Burnt_Brick-ff87f8984cac4efe943b36c20310b6e2.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 41,
+      "pages": [
+        41
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 11,
+      "eligibleImagePlacementCount": 10,
+      "candidateImageCount": 2,
+      "productTextBbox": [
+        232.7,
+        491.6,
+        325.3,
+        522.7
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 990,
+          "bbox": [
+            -0.3,
+            -0.7,
+            428.3,
+            464.4
+          ],
+          "verticalGap": 27.2
+        },
+        {
+          "imageIndex": 9,
+          "xref": 999,
+          "bbox": [
+            113.3,
+            551.8,
+            598.0,
+            864.4
+          ],
+          "verticalGap": 29.1
+        }
+      ],
+      "assignedImageXref": 990,
+      "assignedImageBbox": [
+        -0.3,
+        -0.7,
+        428.3,
+        464.4
+      ],
+      "assignedCropBbox": [
+        232.7,
+        225.3,
+        352.1,
+        464.4
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 115948,
+      "imageDimensions": [
+        300,
+        598
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x598mm",
+      "surface": null,
+      "finish": "Soil",
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p41-3-Burnt_Brick-16a2e739bcf546e88988119fa8ff4cf4.jpeg",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 41,
+      "pages": [
+        41
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 11,
+      "eligibleImagePlacementCount": 10,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        155.9,
+        768.8,
+        243.7,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 9,
+          "xref": 999,
+          "bbox": [
+            113.3,
+            551.8,
+            598.0,
+            864.4
+          ],
+          "verticalGap": 0
+        }
+      ],
+      "assignedImageXref": 999,
+      "assignedImageBbox": [
+        113.3,
+        551.8,
+        598.0,
+        864.4
+      ],
+      "assignedCropBbox": null,
+      "associationReason": "Unique same-page image placement overlaps the label horizontally and is within the vertical association limit",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 21392,
+      "imageDimensions": [
+        646,
+        416
+      ],
+      "imageFormat": "JPEG"
+    },
+    {
+      "productCode": null,
+      "productName": "Terra Red",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x598mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p42-1-Terra_Red-1c6e176c88cf42eebd7947e41ea629e1.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 42,
+      "pages": [
+        42
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        930.8,
+        761.7,
+        1018.6,
+        792.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1006,
+          "bbox": [
+            44.9,
+            105.6,
+            1127.9,
+            743.7
+          ],
+          "verticalGap": 18.1
+        }
+      ],
+      "assignedImageXref": 1006,
+      "assignedImageBbox": [
+        44.9,
+        105.6,
+        1127.9,
+        743.7
+      ],
+      "assignedCropBbox": [
+        930.8,
+        638.3,
+        1036.1,
+        743.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 26691,
+      "imageDimensions": [
+        265,
+        265
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Soil Heritage",
+      "category": null,
+      "collection": "Soil",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p42-2-Soil_Heritage-fc768caec319442384bb345d99573df6.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 42,
+      "pages": [
+        42
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1036.1,
+        761.7,
+        1126.1,
+        792.9
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1006,
+          "bbox": [
+            44.9,
+            105.6,
+            1127.9,
+            743.7
+          ],
+          "verticalGap": 18.1
+        }
+      ],
+      "assignedImageXref": 1006,
+      "assignedImageBbox": [
+        44.9,
+        105.6,
+        1127.9,
+        743.7
+      ],
+      "assignedCropBbox": [
+        1036.1,
+        651.9,
+        1127.9,
+        743.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 6529,
+      "imageDimensions": [
+        230,
+        231
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Burnt Brick",
+      "category": null,
+      "collection": "Soil",
+      "size": "598x598mm",
+      "surface": "Protect",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p44-1-Burnt_Brick-21a463d7c17648e6a98922a1ac5355bf.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 44,
+      "pages": [
+        44
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        947.8,
+        768.8,
+        1035.6,
+        800.0
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1203,
+          "bbox": [
+            169.5,
+            -0.4,
+            1138.7,
+            693.7
+          ],
+          "verticalGap": 75.1
+        }
+      ],
+      "assignedImageXref": 1203,
+      "assignedImageBbox": [
+        169.5,
+        -0.4,
+        1138.7,
+        693.7
+      ],
+      "assignedCropBbox": [
+        947.8,
+        591.3,
+        1050.2,
+        693.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 28730,
+      "imageDimensions": [
+        257,
+        257
+      ],
+      "imageFormat": "PNG"
+    },
+    {
+      "productCode": null,
+      "productName": "Soil Petals",
+      "category": null,
+      "collection": "Soil",
+      "size": "198x198mm",
+      "surface": "Matt",
+      "finish": null,
+      "color": null,
+      "image": "extracted_images/fresh-courtyard-20260927-v4/product_crops/p44-2-Soil_Petals-7956a30974404fbe800440822276af50.png",
+      "sourceFile": "029-_Courtyard_Catalogue.pdf",
+      "sourcePage": 44,
+      "pages": [
+        44
+      ],
+      "pdfPageHasImagePlacements": true,
+      "pdfPageImagePlacementCount": 1,
+      "eligibleImagePlacementCount": 1,
+      "candidateImageCount": 1,
+      "productTextBbox": [
+        1050.2,
+        768.8,
+        1138.0,
+        812.1
+      ],
+      "candidateImages": [
+        {
+          "imageIndex": 0,
+          "xref": 1203,
+          "bbox": [
+            169.5,
+            -0.4,
+            1138.7,
+            693.7
+          ],
+          "verticalGap": 75.1
+        }
+      ],
+      "assignedImageXref": 1203,
+      "assignedImageBbox": [
+        169.5,
+        -0.4,
+        1138.7,
+        693.7
+      ],
+      "assignedCropBbox": [
+        1050.2,
+        605.3,
+        1138.7,
+        693.7
+      ],
+      "associationReason": "Crop is restricted to the candidate's same-row column cell within a shared composite image",
+      "imageFileExists": true,
+      "imageFileValid": true,
+      "imageFileSizeBytes": 16911,
+      "imageDimensions": [
+        222,
+        222
+      ],
+      "imageFormat": "PNG"
+    }
+  ]
+}

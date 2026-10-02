@@ -148,7 +148,7 @@ function Products() {
 
           <p>
             Browse, search and export product data extracted from all uploaded catalogs.
-            Browse and export product data, dimensions, surfaces, finishes, and source images.
+            Includes product codes, MRP prices, dimensions, finishes, and cropped visuals.
           </p>
         </div>
 
@@ -218,6 +218,7 @@ function Products() {
               <tr>
                 <th>PRODUCT & CODE</th>
                 <th>CATEGORY & COLLECTION</th>
+                <th>PRICE / MRP</th>
                 <th>FINISH / COLOR</th>
                 <th>SIZE / DIMENSIONS</th>
                 <th>PAGE</th>
@@ -252,9 +253,9 @@ function Products() {
                       </div>
 
                       <div>
-                        <strong>{product.productName || "Name unavailable"}</strong>
+                        <strong>{product.productName || "Product"}</strong>
                         <span style={{ color: "#d4af37", fontWeight: "600", fontSize: "0.85rem" }}>
-                          {product.productCode ? `Code: ${product.productCode}` : "Code unavailable"}
+                          {product.productCode ? `Code: ${product.productCode}` : "No Code"}
                         </span>
                       </div>
                     </div>
@@ -264,7 +265,7 @@ function Products() {
                   <td>
                     <div>
                       <span className="category-badge">
-                        {product.category || "Category unavailable"}
+                        {product.category || "Ceramic"}
                       </span>
                       {product.collection && (
                         <small style={{ display: "block", marginTop: "4px", color: "#9ca3af" }}>
@@ -274,17 +275,18 @@ function Products() {
                     </div>
                   </td>
 
+                  {/* PRICE / MRP */}
+                  <td>
+                    <strong style={{ color: "#22c55e", fontSize: "0.95rem" }}>
+                      {product.price || "—"}
+                    </strong>
+                  </td>
+
                   {/* FINISH */}
                   <td>
-                    {[
-                      product.surface,
-                      ...(Array.isArray(product.finish)
-                        ? product.finish
-                        : product.finish
-                          ? [product.finish]
-                          : []),
-                      product.color,
-                    ].filter(Boolean).join(", ") || "—"}
+                    {Array.isArray(product.finish) && product.finish.length > 0
+                      ? product.finish.join(", ")
+                      : product.color || "—"}
                   </td>
 
                   {/* SIZE */}
@@ -297,11 +299,9 @@ function Products() {
                   {/* PAGE */}
                   <td>
                     <span style={{ color: "#9ca3af", fontSize: "0.85rem" }}>
-                      {product.sourcePage
-                        ? `p. ${product.sourcePage}`
-                        : Array.isArray(product.pages) && product.pages.length > 0
-                          ? `p. ${product.pages.join(", ")}`
-                          : "—"}
+                      {Array.isArray(product.pages) && product.pages.length > 0
+                        ? `p. ${product.pages.join(", ")}`
+                        : "—"}
                     </span>
                   </td>
 
